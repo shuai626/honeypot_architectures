@@ -1,0 +1,22 @@
+#!/bin/bash
+
+sleep 605
+
+echo CHECKING
+
+if [ -f ~/login_102 ]
+then
+
+	time=`cat ~/login_102`
+	secondsDiff=$(( `date '+%Y%m%d%H%M%S'` - $time ))
+	srcip=`cat ~/srcip_102`
+
+	if [ $secondsDiff -gt 600 ]
+	then
+		iptables --table filter --delete INPUT -s 0.0.0.0/0 -d 172.20.0.1 --protocol tcp --destination-port 10000 --jump DROP
+		iptables --table filter --delete INPUT -s $srcip -d 172.20.0.1 --protocol tcp --destination-port 10000 --jump ACCEPT
+		iptables --table filter --insert INPUT 1 -s $srcip -d 172.20.0.1 --protocol tcp --destination-port 10000 --jump DROP
+		echo "STARTING DESTRUCTION, SLEEP OVER"
+		nohup ~/clean_up_102 &
+	fi
+fi

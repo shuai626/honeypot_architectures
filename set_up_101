@@ -1,0 +1,54 @@
+#!/bin/bash
+
+pct start 101
+pct unmount 101
+pct mount 101
+
+day=`date '+%Y-%m-%d'`
+date=`date '+%H:%M:%S'`
+
+mkdir -p /root/Snoopy_Logger_Data/$day/$date
+touch /root/Snoopy_Logger_Data/$day/$date/auth.log
+
+final_srcip="uninitialized"
+connected=0
+ssh_count=0
+tail --pid=$$ -F /var/lib/lxc/101/rootfs/var/log/auth.log | while read a
+do
+	echo "$a" >> /root/Snoopy_Logger_Data/$day/$date/auth.log
+
+	temp_srcip=`echo "$a" | awk -F" " '$6 == "Accepted" {print $11}'`
+	if [ "$temp_srcip" != "" ] && [ $connected -eq 0 ]
+	then
+		final_srcip="$temp_srcip"
+		connected=1
+		echo "FOUND SRCIP" $final_srcip
+		echo "AllowUsers root@$final_srcip" >> /var/lib/lxc/101/rootfs/etc/ssh/sshd_config
+		pct exec 101 -- service ssh restart
+	fi
+
+	if [ "$temp_srcip" = "$final_srcip" ]
+	then
+		ssh_count=$(( $ssh_count + 1 ))
+		echo $ssh_count
+		rm ~/login_101
+	fi
+
+        count=`grep "pam_unix(sshd:session): session closed" <<< "$a" | wc -l`
+        echo CONTAINS PAM_UNIX: $count
+        if [ $count -eq 1 ]
+	then
+
+		ssh_count=$(( $ssh_count - 1 ))
+		echo $ssh_count
+		echo $discon_ip
+		if [ $ssh_count -eq 0 ]
+		then
+			echo CHANGE
+			echo $final_srcip > ~/srcip_101
+			date '+%Y%m%d%H%M%S' > ~/login_101
+			nohup ~/sleep_101 &
+		fi
+	fi
+done
+

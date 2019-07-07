@@ -1,0 +1,104 @@
+#!/bin/bash
+
+yesterday=`date '+%Y-%m-%d' --date="yesterday"`
+
+#for snoopy logger, we want to access the specific directory in /root/Snoopy_Logger_Data/
+#and check every auth.log for date&time, source ip, and container ID (101)
+echo "Resetting Counters"
+for counter in /root/attacker_counters/*
+do
+	echo 0 > $counter
+done
+
+echo "Parsing Snoopy Logger Data"
+for file in /root/Snoopy_Logger_Data/$yesterday/*
+do
+	sleep 3
+	time=`echo $file | awk -F'/' '{print $5}'`
+	date=`echo $yesterday $time`
+	sourceip=`cat $file/auth.log | grep "Accepted password for root from" | tail -n 1 | awk -F' ' '{print $11}'`
+	containerip=128.8.238.81
+
+	occurences=`grep "$sourceip" /root/snoopy_logger_blacklist | wc -l`
+	i=`cat $file/auth.log | grep "Azeem" | wc -l`
+	if [ $i -gt 0 ] && [ "$sourceip" != "" ] && [ $occurences -eq 0 ]
+	then
+		count=`cat /root/attacker_counters/azeem_count_101`
+		count=$(( $count + 1 ))
+		echo $count > /root/attacker_counters/azeem_count_101
+		log -k /root/hacs-hp-1-health-logs-03ec913ef954.json -s https://docs.google.com/spreadsheets/d/1e8ZBlXPH1qe8X7uatByzOFLxjPI1No4ewc8D9yavRH0/edit#gid=954824585 -d "$date","$sourceip","$containerip" -w "Azeem"
+	fi
+
+	j=`cat $file/auth.log | grep "Clark" | wc -l`
+	if [ $j -gt 0 ] && [ "$sourceip" != "" ] && [ $occurences -eq 0 ]
+        then
+                count=`cat /root/attacker_counters/clark_count_101`
+                count=$(( $count + 1 ))
+                echo $count > /root/attacker_counters/clark_count_101
+		log -k /root/hacs-hp-1-health-logs-03ec913ef954.json -s https://docs.google.com/spreadsheets/d/1e8ZBlXPH1qe8X7uatByzOFLxjPI1No4ewc8D9yavRH0/edit#gid=954824585 -d "$date","$sourceip","$containerip" -w "Clark"
+        fi
+
+	if [ $i -eq 0 ] && [ $j -eq 0 ] && [ "$sourceip" != "" ] && [ $occurences -eq 0 ]
+	then
+		count=`cat /root/attacker_counters/other_count_101`
+                count=$(( $count + 1 ))
+                echo $count > /root/attacker_counters/other_count_101
+		log -k /root/hacs-hp-1-health-logs-03ec913ef954.json -s https://docs.google.com/spreadsheets/d/1e8ZBlXPH1qe8X7uatByzOFLxjPI1No4ewc8D9yavRH0/edit#gid=954824585 -d "$date","$sourceip","$containerip" -w "Other"
+	fi
+
+	echo "$sourceip" >> /root/snoopy_logger_blacklist
+done
+echo "Starting MITM Logs"
+mitm_gzs=($(grep "$yesterday" /root/data/logins/102.txt | awk -F';' '!_[$2]++ {print $3}'))
+for line in ${mitm_gzs[@]}
+do
+	sleep 3
+	gzFile=`echo $line.gz`
+	srcip=`zcat /root/data/attacker_sessions/$gzFile | grep -a "Attacker IP Address:" | head -n 1 | awk -F' ' '{print $4}'`
+	date=`zcat /root/data/attacker_sessions/$gzFile | grep -a "Date:" | head -n 1 | awk -F'Date:' '{print $2}'`
+	containerIP=128.8.238.113
+
+	echo $date $srcip
+
+	x=`zcat /root/data/attacker_sessions/$gzFile | grep "Azeem" | wc -l`
+	y=`zcat /root/data/attacker_sessions/$gzFile | grep "Clark" | wc -l`
+
+	if [ $x -gt 0 ]
+	then
+		count=`cat /root/attacker_counters/azeem_count_102`
+                count=$(( $count + 1 ))
+                echo $count > /root/attacker_counters/azeem_count_102
+		log -k /root/hacs-hp-1-health-logs-03ec913ef954.json -s https://docs.google.com/spreadsheets/d/1e8ZBlXPH1qe8X7uatByzOFLxjPI1No4ewc8D9yavRH0/edit#gid=954824585 -d "$date","$srcip","$containerIP" -w "Azeem"
+	fi
+
+	if [ $y -gt 0 ]
+	then
+		count=`cat /root/attacker_counters/clark_count_102`
+                count=$(( $count + 1 ))
+                echo $count > /root/attacker_counters/clark_count_102
+		log -k /root/hacs-hp-1-health-logs-03ec913ef954.json -s https://docs.google.com/spreadsheets/d/1e8ZBlXPH1qe8X7uatByzOFLxjPI1No4ewc8D9yavRH0/edit#gid=954824585 -d "$date","$srcip","$containerIP" -w "Clark"
+	fi
+
+	if [ $x -eq 0 ] && [ $y -eq 0 ]
+	then
+		count=`cat /root/attacker_counters/other_count_102`
+                count=$(( $count + 1 ))
+                echo $count > /root/attacker_counters/other_count_102
+		log -k /root/hacs-hp-1-health-logs-03ec913ef954.json -s https://docs.google.com/spreadsheets/d/1e8ZBlXPH1qe8X7uatByzOFLxjPI1No4ewc8D9yavRH0/edit#gid=954824585 -d "$date","$srcip","$containerIP" -w "Other"
+	fi
+done
+
+az101=`cat /root/attacker_counters/azeem_count_101`
+cl101=`cat /root/attacker_counters/clark_count_101`
+ot101=`cat /root/attacker_counters/other_count_101`
+az102=`cat /root/attacker_counters/azeem_count_102`
+cl102=`cat /root/attacker_counters/clark_count_102`
+ot102=`cat /root/attacker_counters/other_count_102`
+log -k /root/hacs-hp-1-health-logs-03ec913ef954.json -s https://docs.google.com/spreadsheets/d/1e8ZBlXPH1qe8X7uatByzOFLxjPI1No4ewc8D9yavRH0/edit#gid=954824585 -d "$yesterday","$az101","$cl101","$ot101","$az102","$cl102","$ot102" -w "Summary"
+
+#for MITM, we want to grep all the lines in /data/logins for the date, then grab the .gz and zcat
+#it for each line that was outputted. Then we look for date&time, source ip, and container ID
+
+#log -k /root/hacs-hp-1-health-logs-03ec913ef954.json -s https://docs.google.com/spreadsheets/d/1wlHS-uFZvdt3IcwDw4fzRxXAg97odq0K-HU34z1qpRQ/edit#gid=0 -d "$date","$ram"
+
+

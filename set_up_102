@@ -1,0 +1,50 @@
+#!/bin/bash
+
+pct start 102
+pct unmount 102
+pct mount 102
+
+node /root/MITM/mitm/index.js HACS101_1J 10000 172.20.0.3 102 true mitm_101.js &
+
+final_srcip="uninitialized"
+connected=0
+ssh_count=0
+tail --pid=$$ -F /var/lib/lxc/102/rootfs/var/log/auth.log | while read a
+do
+	temp_srcip=`echo "$a" | awk -F" " '$6 == "Accepted" {print $11}'`
+	if [ "$temp_srcip" != "" ] && [ $connected -eq 0 ]
+	then
+		final_srcip="$temp_srcip"
+		connected=1
+		echo "FOUND SRCIP" $final_srcip
+		echo "AllowUsers root@$final_srcip" >> /var/lib/lxc/102/rootfs/etc/ssh/sshd_config
+		sleep 3
+		tail -n 1 /root/data/logins/102.txt | awk -F';' '{print $2}' > ~/srcip_102
+		actual_srcip=`cat ~/srcip_102`
+		iptables --table filter --insert INPUT 1 -s 0.0.0.0/0 -d 172.20.0.1 --protocol tcp --destination-port 10000 --jump DROP
+		iptables --table filter --insert INPUT 1 -s $actual_srcip -d 172.20.0.1 --protocol tcp --destination-port 10000 --jump ACCEPT
+	fi
+
+	if [ "$temp_srcip" = "$final_srcip" ]
+	then
+		ssh_count=$(( $ssh_count + 1 ))
+		echo $ssh_count
+		rm ~/login_102
+	fi
+
+        count=`grep "pam_unix(sshd:session): session closed" <<< "$a" | wc -l`
+        echo CONTAINS PAM_UNIX: $count
+        if [ $count -eq 1 ]
+	then
+
+		ssh_count=$(( $ssh_count - 1 ))
+		echo $ssh_count
+		echo $discon_ip
+		if [ $ssh_count -eq 0 ]
+		then
+			echo CHANGE
+			date '+%Y%m%d%H%M%S' > ~/login_102
+			nohup ~/sleep_102 &
+		fi
+	fi
+done

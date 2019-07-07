@@ -1,0 +1,317 @@
+May  3 15:00:35 CT101 systemd-logind[70]: New seat seat0.
+May  3 15:00:35 CT101 sshd[185]: Server listening on 0.0.0.0 port 22.
+May  3 15:00:35 CT101 sshd[185]: Server listening on :: port 22.
+May  3 15:00:36 CT101 chpasswd[298]: pam_unix(chpasswd:chauthtok): password changed for root
+May  3 15:00:37 CT101 sshd[185]: Received signal 15; terminating.
+May  3 15:00:37 CT101 sshd[325]: Server listening on 0.0.0.0 port 22.
+May  3 15:00:37 CT101 sshd[325]: Server listening on :: port 22.
+May  3 15:02:02 CT101 snoopy[40]: [uid:0 sid:40 tty:(none) cwd:/ filename:/lib/systemd/systemd-journald]: /lib/systemd/systemd-journald
+May  3 15:02:02 CT101 snoopy[41]: [uid:0 sid:1 tty:(none) cwd:/ filename:/bin/mount]: /bin/mount hugetlbfs /dev/hugepages -t hugetlbfs
+May  3 15:02:02 CT101 snoopy[39]: [uid:0 sid:39 tty:(none) cwd:/ filename:/lib/systemd/systemd-remount-fs]: /lib/systemd/systemd-remount-fs
+May  3 15:02:02 CT101 snoopy[42]: [uid:0 sid:42 tty:(none) cwd:/ filename:/lib/ufw/ufw-init]: /lib/ufw/ufw-init start quiet
+May  3 15:02:02 CT101 snoopy[38]: [uid:0 sid:38 tty:(none) cwd:/ filename:/bin/mkdir]: /bin/mkdir -p /run/resolvconf/interface
+May  3 15:02:02 CT101 snoopy[44]: [uid:0 sid:44 tty:(none) cwd:/ filename:/lib/systemd/systemd-random-seed]: /lib/systemd/systemd-random-seed load
+May  3 15:02:02 CT101 snoopy[45]: [uid:0 sid:45 tty:(none) cwd:/ filename:/bin/plymouth]: /bin/plymouth update-root-fs --read-write
+May  3 15:02:02 CT101 snoopy[43]: [uid:0 sid:43 tty:(none) cwd:/ filename:/bin/touch]: /bin/touch /run/resolvconf/postponed-update
+May  3 15:02:02 CT101 snoopy[46]: [uid:0 sid:46 tty:(none) cwd:/ filename:/etc/init.d/apparmor]: /etc/init.d/apparmor start
+May  3 15:02:02 CT101 snoopy[47]: [uid:0 sid:47 tty:(none) cwd:/ filename:/bin/journalctl]: /bin/journalctl --flush
+May  3 15:02:02 CT101 snoopy[48]: [uid:0 sid:48 tty:(none) cwd:/ filename:/sbin/resolvconf]: /sbin/resolvconf --enable-updates
+May  3 15:02:02 CT101 snoopy[49]: [uid:0 sid:46 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --lsbsysinit --list /lib/lsb/init-functions.d
+May  3 15:02:02 CT101 snoopy[50]: [uid:0 sid:48 tty:(none) cwd:/ filename:/bin/mkdir]: mkdir -p /run/resolvconf/interface
+May  3 15:02:02 CT101 snoopy[51]: [uid:0 sid:46 tty:(none) cwd:/ filename:/usr/bin/which]: which initctl
+May  3 15:02:02 CT101 snoopy[53]: [uid:0 sid:46 tty:(none) cwd:/ filename:/bin/systemctl]: systemctl -p LoadState show apparmor.service
+May  3 15:02:02 CT101 snoopy[54]: [uid:0 sid:48 tty:(none) cwd:/run/resolvconf/interface filename:/bin/rm]: rm -f /run/resolvconf/postponed-update
+May  3 15:02:02 CT101 snoopy[52]: [uid:0 sid:48 tty:(none) cwd:/run/resolvconf/interface filename:/sbin/run-parts]: run-parts --arg=-u /etc/resolvconf/update.d
+May  3 15:02:02 CT101 snoopy[52]: [uid:0 sid:48 tty:(none) cwd:/run/resolvconf/interface filename:/bin/run-parts]: run-parts --arg=-u /etc/resolvconf/update.d
+May  3 15:02:02 CT101 snoopy[55]: [uid:0 sid:55 tty:(none) cwd:/ filename:/bin/systemd-tmpfiles]: /bin/systemd-tmpfiles --create --remove --boot --exclude-prefix=/dev
+May  3 15:02:02 CT101 snoopy[56]: [uid:0 sid:48 tty:(none) cwd:/run/resolvconf/interface filename:/etc/resolvconf/update.d/libc]: /etc/resolvconf/update.d/libc -u
+May  3 15:02:02 CT101 snoopy[57]: [uid:0 sid:46 tty:(none) cwd:/ filename:/bin/plymouth]: plymouth --ping
+May  3 15:02:02 CT101 snoopy[58]: [uid:0 sid:48 tty:(none) cwd:/run/resolvconf/interface filename:/lib/resolvconf/list-records]: /lib/resolvconf/list-records
+May  3 15:02:02 CT101 snoopy[59]: [uid:0 sid:46 tty:(none) cwd:/ filename:/usr/bin/systemd-detect-virt]: systemd-detect-virt --quiet --container
+May  3 15:02:02 CT101 snoopy[61]: [uid:0 sid:61 tty:(none) cwd:/ filename:/lib/systemd/systemd-update-utmp]: /lib/systemd/systemd-update-utmp reboot
+May  3 15:02:02 CT101 snoopy[60]: [uid:0 sid:48 tty:(none) cwd:/run/resolvconf/interface filename:/bin/sed]: sed -e #012#011#011s/^[[:space:]]+//#012#011#011s/[[:space:]].*//#012#011#011s/#.*//#012#011#011///d#012#011#011/^~/d#012#011#011/^./d#012#011#011/^$/d#012#011#011 /etc/resolvconf/interface-order
+May  3 15:02:02 CT101 snoopy[62]: [uid:0 sid:62 tty:(none) cwd:/ filename:/bin/sh]: /bin/sh -c [ "$CONFIGURE_INTERFACES" != "no" ] && [ -n "$(ifquery --read-environment --list --exclude=lo)" ] && udevadm settle
+May  3 15:02:02 CT101 snoopy[63]: [uid:0 sid:48 tty:(none) cwd:/run/resolvconf/interface filename:/bin/sed]: sed -n s/^[[:space:]]*nameserver[[:space:]]+//p /etc/resolvconf/resolv.conf.d/base
+May  3 15:02:02 CT101 snoopy[65]: [uid:0 sid:65 tty:(none) cwd:/ filename:/usr/bin/dbus-daemon]: /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+May  3 15:02:02 CT101 snoopy[64]: [uid:0 sid:62 tty:(none) cwd:/ filename:/sbin/ifquery]: ifquery --read-environment --list --exclude=lo
+May  3 15:02:02 CT101 snoopy[66]: [uid:0 sid:48 tty:(none) cwd:/run/resolvconf/interface filename:/bin/sed]: sed -n s/^[[:space:]]*((search)|(domain))[[:space:]]+//p /etc/resolvconf/resolv.conf.d/base
+May  3 15:02:02 CT101 snoopy[67]: [uid:0 sid:62 tty:(none) cwd:/ filename:/sbin/udevadm]: udevadm settle
+May  3 15:02:02 CT101 snoopy[71]: [uid:0 sid:71 tty:(none) cwd:/ filename:/usr/lib/accountsservice/accounts-daemon]: /usr/lib/accountsservice/accounts-daemon
+May  3 15:02:02 CT101 snoopy[72]: [uid:0 sid:72 tty:(none) cwd:/ filename:/usr/sbin/cron]: /usr/sbin/cron -f
+May  3 15:02:02 CT101 snoopy[73]: [uid:0 sid:73 tty:(none) cwd:/ filename:/etc/init.d/irqbalance]: /etc/init.d/irqbalance start
+May  3 15:02:02 CT101 snoopy[74]: [uid:0 sid:74 tty:(none) cwd:/ filename:/lib/systemd/systemd-logind]: /lib/systemd/systemd-logind
+May  3 15:02:02 CT101 snoopy[70]: [uid:0 sid:70 tty:(none) cwd:/ filename:/etc/init.d/ondemand]: /etc/init.d/ondemand start
+May  3 15:02:02 CT101 snoopy[76]: [uid:0 sid:76 tty:(none) cwd:/ filename:/sbin/ifup]: /sbin/ifup -a --read-environment
+May  3 15:02:02 CT101 snoopy[69]: [uid:0 sid:69 tty:(none) cwd:/ filename:/lib/systemd/systemd-user-sessions]: /lib/systemd/systemd-user-sessions start
+May  3 15:02:02 CT101 snoopy[68]: [uid:0 sid:48 tty:(none) cwd:/run/resolvconf/interface filename:/bin/rm]: rm -f /run/resolvconf/resolv.conf_new.56
+May  3 15:02:02 CT101 snoopy[77]: [uid:0 sid:73 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --lsbsysinit --list /lib/lsb/init-functions.d
+May  3 15:02:02 CT101 snoopy[78]: [uid:0 sid:70 tty:(none) cwd:/ filename:/bin/cat]: cat /proc/cmdline
+May  3 15:02:02 CT101 systemd-logind[74]: New seat seat0.
+May  3 15:02:02 CT101 snoopy[80]: [uid:0 sid:48 tty:(none) cwd:/run/resolvconf/interface filename:/bin/cat]: cat /etc/resolvconf/resolv.conf.d/head
+May  3 15:02:02 CT101 snoopy[83]: [uid:0 sid:73 tty:(none) cwd:/ filename:/bin/which]: which initctl
+May  3 15:02:02 CT101 snoopy[84]: [uid:0 sid:70 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --lsbsysinit --list /lib/lsb/init-functions.d
+May  3 15:02:02 CT101 snoopy[85]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/run-parts]: /bin/run-parts --exit-on-error /etc/network/if-pre-up.d
+May  3 15:02:02 CT101 snoopy[86]: [uid:0 sid:48 tty:(none) cwd:/run/resolvconf/interface filename:/bin/sed]: sed -e /^[[:space:]]*$/d -e /^[[:space:]]*#/d -e /^[[:space:]]*((nameserver)|(search)|(domain))[[:space:]]/d /etc/resolvconf/resolv.conf.d/base
+May  3 15:02:02 CT101 snoopy[87]: [uid:0 sid:73 tty:(none) cwd:/ filename:/bin/systemctl]: systemctl -p LoadState show irqbalance.service
+May  3 15:02:02 CT101 snoopy[93]: [uid:0 sid:48 tty:(none) cwd:/run/resolvconf/interface filename:/bin/cat]: cat /etc/resolvconf/resolv.conf.d/tail
+May  3 15:02:02 CT101 snoopy[94]: [uid:0 sid:73 tty:(none) cwd:/ filename:/bin/plymouth]: plymouth --ping
+May  3 15:02:02 CT101 snoopy[95]: [uid:0 sid:70 tty:(none) cwd:/ filename:/bin/systemctl]: systemctl -p LoadState show ondemand.service
+May  3 15:02:02 CT101 snoopy[96]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/run-parts]: /bin/run-parts --exit-on-error /etc/network/if-pre-up.d
+May  3 15:02:02 CT101 snoopy[97]: [uid:0 sid:48 tty:(none) cwd:/run/resolvconf/interface filename:/bin/mv]: mv -f /run/resolvconf/resolv.conf_new.56 /run/resolvconf/resolv.conf
+May  3 15:02:02 CT101 snoopy[98]: [uid:0 sid:73 tty:(none) cwd:/ filename:/usr/bin/systemd-detect-virt]: /usr/bin/systemd-detect-virt --quiet --container
+May  3 15:02:02 CT101 snoopy[100]: [uid:0 sid:48 tty:(none) cwd:/run/resolvconf/interface filename:/bin/rm]: rm -f /run/resolvconf/resolv.conf_new.56
+May  3 15:02:02 CT101 snoopy[101]: [uid:0 sid:70 tty:(none) cwd:/ filename:/bin/plymouth]: plymouth --ping
+May  3 15:02:02 CT101 snoopy[102]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/ip]: /bin/ip link set dev lo up
+May  3 15:02:02 CT101 snoopy[103]: [uid:0 sid:70 tty:(none) cwd:/ filename:/sbin/start-stop-daemon]: start-stop-daemon --start --background --exec /etc/init.d/ondemand -- background
+May  3 15:02:02 CT101 snoopy[105]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/run-parts]: /bin/run-parts --exit-on-error /etc/network/if-up.d
+May  3 15:02:02 CT101 snoopy[107]: [uid:0 sid:76 tty:(none) cwd:/ filename:/etc/network/if-up.d/000resolvconf]: /etc/network/if-up.d/000resolvconf
+May  3 15:02:02 CT101 snoopy[108]: [uid:0 sid:106 tty:(none) cwd:/ filename:/etc/init.d/ondemand]: /etc/init.d/ondemand background
+May  3 15:02:02 CT101 snoopy[110]: [uid:0 sid:76 tty:(none) cwd:/ filename:/sbin/resolvconf]: /sbin/resolvconf -a lo.inet
+May  3 15:02:02 CT101 snoopy[111]: [uid:0 sid:106 tty:(none) cwd:/ filename:/bin/cat]: cat /proc/cmdline
+May  3 15:02:02 CT101 snoopy[112]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/mkdir]: mkdir -p /run/resolvconf/interface
+May  3 15:02:02 CT101 snoopy[113]: [uid:0 sid:106 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --lsbsysinit --list /lib/lsb/init-functions.d
+May  3 15:02:02 CT101 snoopy[115]: [uid:0 sid:106 tty:(none) cwd:/ filename:/bin/systemctl]: systemctl -p LoadState show ondemand.service
+May  3 15:02:02 CT101 snoopy[117]: [uid:0 sid:76 tty:(none) cwd:/run/resolvconf/interface filename:/bin/sed]: sed -e s/[[:blank:]]+$// -e /^$/d
+May  3 15:02:02 CT101 snoopy[116]: [uid:0 sid:76 tty:(none) cwd:/run/resolvconf/interface filename:/bin/sed]: sed -e s/#.*$// -e s/[[:blank:]]+$// -e s/^[[:blank:]]+// -e s/[[:blank:]]+/ /g -e /^nameserver/!b ENDOFCYCLE -e s/$/ / -e s/([:. ])0+/10/g -e s/([:. ])0([123456789abcdefABCDEF][[:xdigit:]]*)/12/g -e /::/b ENDOFCYCLE; s/ (0[: ])+/ ::/ -e /::/b ENDOFCYCLE; s/:(0[: ])+/::/ -e : ENDOFCYCLE -
+May  3 15:02:02 CT101 snoopy[118]: [uid:0 sid:106 tty:(none) cwd:/ filename:/bin/plymouth]: plymouth --ping
+May  3 15:02:02 CT101 snoopy[119]: [uid:0 sid:76 tty:(none) cwd:/ filename:/etc/network/if-up.d/openssh-server]: /etc/network/if-up.d/openssh-server
+May  3 15:02:02 CT101 snoopy[120]: [uid:0 sid:106 tty:(none) cwd:/ filename:/bin/sleep]: sleep 60
+May  3 15:02:02 CT101 snoopy[121]: [uid:0 sid:76 tty:(none) cwd:/ filename:/etc/network/if-up.d/postfix]: /etc/network/if-up.d/postfix
+May  3 15:02:02 CT101 snoopy[122]: [uid:0 sid:76 tty:(none) cwd:/ filename:/etc/network/if-up.d/upstart]: /etc/network/if-up.d/upstart
+May  3 15:02:02 CT101 snoopy[123]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --lsbsysinit --list /lib/lsb/init-functions.d
+May  3 15:02:02 CT101 snoopy[124]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/systemctl]: systemctl -p LoadState show upstart.service
+May  3 15:02:02 CT101 snoopy[125]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/readlink]: readlink -f /etc/network/if-up.d/upstart
+May  3 15:02:02 CT101 snoopy[126]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/plymouth]: plymouth --ping
+May  3 15:02:02 CT101 snoopy[128]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/run-parts]: /bin/run-parts --exit-on-error /etc/network/if-pre-up.d
+May  3 15:02:02 CT101 snoopy[130]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/ip]: /bin/ip link set dev lo up
+May  3 15:02:02 CT101 snoopy[132]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/ip]: /bin/ip addr add dev lo ::1
+May  3 15:02:02 CT101 snoopy[134]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/run-parts]: /bin/run-parts --exit-on-error /etc/network/if-up.d
+May  3 15:02:02 CT101 snoopy[135]: [uid:0 sid:76 tty:(none) cwd:/ filename:/etc/network/if-up.d/000resolvconf]: /etc/network/if-up.d/000resolvconf
+May  3 15:02:02 CT101 snoopy[137]: [uid:0 sid:76 tty:(none) cwd:/ filename:/sbin/resolvconf]: /sbin/resolvconf -a lo.inet6
+May  3 15:02:02 CT101 snoopy[138]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/mkdir]: mkdir -p /run/resolvconf/interface
+May  3 15:02:02 CT101 snoopy[141]: [uid:0 sid:76 tty:(none) cwd:/run/resolvconf/interface filename:/bin/sed]: sed -e s/[[:blank:]]+$// -e /^$/d
+May  3 15:02:02 CT101 snoopy[140]: [uid:0 sid:76 tty:(none) cwd:/run/resolvconf/interface filename:/bin/sed]: sed -e s/#.*$// -e s/[[:blank:]]+$// -e s/^[[:blank:]]+// -e s/[[:blank:]]+/ /g -e /^nameserver/!b ENDOFCYCLE -e s/$/ / -e s/([:. ])0+/10/g -e s/([:. ])0([123456789abcdefABCDEF][[:xdigit:]]*)/12/g -e /::/b ENDOFCYCLE; s/ (0[: ])+/ ::/ -e /::/b ENDOFCYCLE; s/:(0[: ])+/::/ -e : ENDOFCYCLE -
+May  3 15:02:02 CT101 snoopy[142]: [uid:0 sid:76 tty:(none) cwd:/ filename:/etc/network/if-up.d/openssh-server]: /etc/network/if-up.d/openssh-server
+May  3 15:02:02 CT101 snoopy[143]: [uid:0 sid:76 tty:(none) cwd:/ filename:/etc/network/if-up.d/postfix]: /etc/network/if-up.d/postfix
+May  3 15:02:02 CT101 snoopy[144]: [uid:0 sid:76 tty:(none) cwd:/ filename:/etc/network/if-up.d/upstart]: /etc/network/if-up.d/upstart
+May  3 15:02:02 CT101 snoopy[145]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --lsbsysinit --list /lib/lsb/init-functions.d
+May  3 15:02:02 CT101 snoopy[146]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/systemctl]: systemctl -p LoadState show upstart.service
+May  3 15:02:02 CT101 snoopy[147]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/readlink]: readlink -f /etc/network/if-up.d/upstart
+May  3 15:02:02 CT101 snoopy[148]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/plymouth]: plymouth --ping
+May  3 15:02:02 CT101 snoopy[150]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/run-parts]: /bin/run-parts --exit-on-error /etc/network/if-pre-up.d
+May  3 15:02:02 CT101 snoopy[152]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/ip]: /bin/ip addr add 172.20.0.2/255.255.0.0 broadcast 172.20.255.255 dev eth0 label eth0
+May  3 15:02:02 CT101 snoopy[154]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/ip]: /bin/ip link set dev eth0 up
+May  3 15:02:02 CT101 snoopy[156]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/ip]: /bin/ip route add default via 172.20.0.1 dev eth0 onlink
+May  3 15:02:02 CT101 snoopy[158]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/run-parts]: /bin/run-parts --exit-on-error /etc/network/if-up.d
+May  3 15:02:02 CT101 snoopy[159]: [uid:0 sid:76 tty:(none) cwd:/ filename:/etc/network/if-up.d/000resolvconf]: /etc/network/if-up.d/000resolvconf
+May  3 15:02:02 CT101 snoopy[161]: [uid:0 sid:76 tty:(none) cwd:/ filename:/sbin/resolvconf]: /sbin/resolvconf -a eth0.inet
+May  3 15:02:02 CT101 snoopy[162]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/mkdir]: mkdir -p /run/resolvconf/interface
+May  3 15:02:02 CT101 snoopy[165]: [uid:0 sid:76 tty:(none) cwd:/run/resolvconf/interface filename:/bin/sed]: sed -e s/[[:blank:]]+$// -e /^$/d
+May  3 15:02:02 CT101 snoopy[164]: [uid:0 sid:76 tty:(none) cwd:/run/resolvconf/interface filename:/bin/sed]: sed -e s/#.*$// -e s/[[:blank:]]+$// -e s/^[[:blank:]]+// -e s/[[:blank:]]+/ /g -e /^nameserver/!b ENDOFCYCLE -e s/$/ / -e s/([:. ])0+/10/g -e s/([:. ])0([123456789abcdefABCDEF][[:xdigit:]]*)/12/g -e /::/b ENDOFCYCLE; s/ (0[: ])+/ ::/ -e /::/b ENDOFCYCLE; s/:(0[: ])+/::/ -e : ENDOFCYCLE -
+May  3 15:02:02 CT101 snoopy[166]: [uid:0 sid:76 tty:(none) cwd:/ filename:/etc/network/if-up.d/openssh-server]: /etc/network/if-up.d/openssh-server
+May  3 15:02:02 CT101 snoopy[167]: [uid:0 sid:76 tty:(none) cwd:/ filename:/etc/network/if-up.d/postfix]: /etc/network/if-up.d/postfix
+May  3 15:02:02 CT101 snoopy[168]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/sed]: sed s/ //g /var/spool/postfix/pid/master.pid
+May  3 15:02:02 CT101 snoopy[171]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/sed]: sed s/.* //;s/.*///
+May  3 15:02:02 CT101 snoopy[170]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/ls]: ls -l /proc/313/exe
+May  3 15:02:02 CT101 snoopy[172]: [uid:0 sid:76 tty:(none) cwd:/ filename:/etc/network/if-up.d/upstart]: /etc/network/if-up.d/upstart
+May  3 15:02:02 CT101 snoopy[173]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --lsbsysinit --list /lib/lsb/init-functions.d
+May  3 15:02:02 CT101 snoopy[174]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/systemctl]: systemctl -p LoadState show upstart.service
+May  3 15:02:02 CT101 snoopy[175]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/readlink]: readlink -f /etc/network/if-up.d/upstart
+May  3 15:02:02 CT101 snoopy[176]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/plymouth]: plymouth --ping
+May  3 15:02:02 CT101 snoopy[178]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/run-parts]: /bin/run-parts --exit-on-error /etc/network/if-up.d
+May  3 15:02:02 CT101 snoopy[179]: [uid:0 sid:76 tty:(none) cwd:/ filename:/etc/network/if-up.d/000resolvconf]: /etc/network/if-up.d/000resolvconf
+May  3 15:02:02 CT101 snoopy[180]: [uid:0 sid:76 tty:(none) cwd:/ filename:/etc/network/if-up.d/openssh-server]: /etc/network/if-up.d/openssh-server
+May  3 15:02:02 CT101 snoopy[181]: [uid:0 sid:76 tty:(none) cwd:/ filename:/etc/network/if-up.d/postfix]: /etc/network/if-up.d/postfix
+May  3 15:02:02 CT101 snoopy[182]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/sed]: sed s/ //g /var/spool/postfix/pid/master.pid
+May  3 15:02:02 CT101 snoopy[185]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/sed]: sed s/.* //;s/.*///
+May  3 15:02:02 CT101 snoopy[184]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/ls]: ls -l /proc/313/exe
+May  3 15:02:02 CT101 snoopy[186]: [uid:0 sid:76 tty:(none) cwd:/ filename:/etc/network/if-up.d/upstart]: /etc/network/if-up.d/upstart
+May  3 15:02:02 CT101 snoopy[187]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --lsbsysinit --list /lib/lsb/init-functions.d
+May  3 15:02:02 CT101 snoopy[188]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/systemctl]: systemctl -p LoadState show upstart.service
+May  3 15:02:02 CT101 snoopy[189]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/readlink]: readlink -f /etc/network/if-up.d/upstart
+May  3 15:02:02 CT101 snoopy[190]: [uid:0 sid:76 tty:(none) cwd:/ filename:/bin/plymouth]: plymouth --ping
+May  3 15:02:02 CT101 snoopy[193]: [uid:0 sid:193 tty:(none) cwd:/ filename:/etc/rc.local]: /etc/rc.local start
+May  3 15:02:02 CT101 snoopy[192]: [uid:0 sid:192 tty:(none) cwd:/ filename:/etc/init.d/postfix]: /etc/init.d/postfix start
+May  3 15:02:02 CT101 snoopy[191]: [uid:0 sid:191 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D
+May  3 15:02:02 CT101 snoopy[194]: [uid:0 sid:192 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --lsbsysinit --list /lib/lsb/init-functions.d
+May  3 15:02:02 CT101 snoopy[196]: [uid:0 sid:196 tty:(none) cwd:/ filename:/bin/plymouth]: /bin/plymouth quit
+May  3 15:02:02 CT101 snoopy[195]: [uid:0 sid:195 tty:(none) cwd:/ filename:/bin/plymouth]: /bin/plymouth --wait
+May  3 15:02:02 CT101 snoopy[197]: [uid:0 sid:192 tty:(none) cwd:/ filename:/bin/systemctl]: systemctl -p LoadState show postfix.service
+May  3 15:02:02 CT101 snoopy[201]: [uid:0 sid:192 tty:(none) cwd:/ filename:/bin/plymouth]: plymouth --ping
+May  3 15:02:02 CT101 sshd[191]: Server listening on 0.0.0.0 port 22.
+May  3 15:02:02 CT101 snoopy[204]: [uid:0 sid:192 tty:(none) cwd:/ filename:/usr/bin/awk]: awk ($3=="y") { print $1}
+May  3 15:02:02 CT101 sshd[191]: Server listening on :: port 22.
+May  3 15:02:02 CT101 snoopy[203]: [uid:0 sid:192 tty:(none) cwd:/ filename:/usr/sbin/postmulti]: postmulti -l -a
+May  3 15:02:02 CT101 snoopy[207]: [uid:0 sid:192 tty:(none) cwd:/ filename:/usr/sbin/postmulti]: postmulti -i - -x postconf -h queue_directory
+May  3 15:02:02 CT101 snoopy[210]: [uid:0 sid:192 tty:(none) cwd:/ filename:/usr/sbin/postmulti]: postmulti -i - -x postconf -h daemon_directory
+May  3 15:02:02 CT101 snoopy[212]: [uid:0 sid:192 tty:(none) cwd:/ filename:/bin/sed]: sed s/ //g /var/spool/postfix/pid/master.pid
+May  3 15:02:02 CT101 snoopy[215]: [uid:0 sid:192 tty:(none) cwd:/ filename:/bin/sed]: sed s/.* -> //; s//[^/]*$//
+May  3 15:02:02 CT101 snoopy[214]: [uid:0 sid:192 tty:(none) cwd:/ filename:/bin/ls]: ls -l /proc/313/exe
+May  3 15:02:02 CT101 snoopy[218]: [uid:0 sid:192 tty:(none) cwd:/ filename:/usr/bin/tr]: tr A-Z a-z
+May  3 15:02:02 CT101 snoopy[217]: [uid:0 sid:192 tty:(none) cwd:/ filename:/usr/sbin/postmulti]: postmulti -i - -x postconf -h myorigin
+May  3 15:02:02 CT101 snoopy[220]: [uid:0 sid:192 tty:(none) cwd:/ filename:/usr/sbin/postmulti]: postmulti -i - -x postconf -h config_directory
+May  3 15:02:02 CT101 snoopy[222]: [uid:0 sid:192 tty:(none) cwd:/ filename:/usr/bin/awk]: awk /^[0-9a-z]/ && ($5 ~ "[-yY]") { print "y"; exit} /etc/postfix/master.cf
+May  3 15:02:02 CT101 snoopy[224]: [uid:0 sid:192 tty:(none) cwd:/ filename:/usr/sbin/postmulti]: postmulti -i - -x postconf -h queue_directory
+May  3 15:02:02 CT101 snoopy[226]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postmulti]: postmulti -i - -x postconf -h smtp_tls_CApath
+May  3 15:02:02 CT101 snoopy[228]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postmulti]: postmulti -i - -x postconf -h smtp_tls_CAfile
+May  3 15:02:02 CT101 snoopy[230]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/mkdir]: mkdir --parent /var/spool/postfix//etc/ssl/certs
+May  3 15:02:02 CT101 snoopy[231]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/cp]: cp -L /etc/ssl/certs/ca-certificates.crt /var/spool/postfix//etc/ssl/certs
+May  3 15:02:02 CT101 snoopy[232]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postmulti]: postmulti -i - -x postconf -h local_recipient_maps
+May  3 15:02:03 CT101 snoopy[234]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/rm]: rm -f etc/localtime
+May  3 15:02:03 CT101 snoopy[235]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/cp]: cp /etc/localtime etc/localtime
+May  3 15:02:03 CT101 snoopy[236]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/chmod]: chmod a+rX etc/localtime
+May  3 15:02:03 CT101 snoopy[237]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/rm]: rm -f etc/services
+May  3 15:02:03 CT101 snoopy[238]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/cp]: cp /etc/services etc/services
+May  3 15:02:03 CT101 snoopy[239]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/chmod]: chmod a+rX etc/services
+May  3 15:02:03 CT101 snoopy[240]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/rm]: rm -f etc/resolv.conf
+May  3 15:02:03 CT101 snoopy[241]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/cp]: cp /etc/resolv.conf etc/resolv.conf
+May  3 15:02:03 CT101 snoopy[242]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/chmod]: chmod a+rX etc/resolv.conf
+May  3 15:02:03 CT101 snoopy[243]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/rm]: rm -f etc/hosts
+May  3 15:02:03 CT101 snoopy[244]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/cp]: cp /etc/hosts etc/hosts
+May  3 15:02:03 CT101 snoopy[245]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/chmod]: chmod a+rX etc/hosts
+May  3 15:02:03 CT101 snoopy[246]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/rm]: rm -f etc/host.conf
+May  3 15:02:03 CT101 snoopy[247]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/cp]: cp /etc/host.conf etc/host.conf
+May  3 15:02:03 CT101 snoopy[248]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/chmod]: chmod a+rX etc/host.conf
+May  3 15:02:03 CT101 snoopy[249]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/rm]: rm -f etc/nsswitch.conf
+May  3 15:02:03 CT101 snoopy[250]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/cp]: cp /etc/nsswitch.conf etc/nsswitch.conf
+May  3 15:02:03 CT101 snoopy[251]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/chmod]: chmod a+rX etc/nsswitch.conf
+May  3 15:02:03 CT101 snoopy[253]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/cpio]: cpio -pdL --quiet .
+May  3 15:02:03 CT101 snoopy[254]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/rm]: rm -f usr/lib/zoneinfo/localtime
+May  3 15:02:03 CT101 snoopy[255]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/mkdir]: mkdir -p usr/lib/zoneinfo
+May  3 15:02:03 CT101 snoopy[256]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/ln]: ln -sf /etc/localtime usr/lib/zoneinfo/localtime
+May  3 15:02:03 CT101 snoopy[258]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/rm]: rm -f lib/x86_64-linux-gnu/libgcc_s.so.1
+May  3 15:02:03 CT101 snoopy[259]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/rm]: rm -f lib/x86_64-linux-gnu/libnss_compat-2.23.so
+May  3 15:02:03 CT101 snoopy[260]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/rm]: rm -f lib/x86_64-linux-gnu/libnss_compat.so.2
+May  3 15:02:03 CT101 snoopy[261]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/rm]: rm -f lib/x86_64-linux-gnu/libnss_dns-2.23.so
+May  3 15:02:03 CT101 snoopy[262]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/rm]: rm -f lib/x86_64-linux-gnu/libnss_dns.so.2
+May  3 15:02:03 CT101 snoopy[263]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/rm]: rm -f lib/x86_64-linux-gnu/libnss_files-2.23.so
+May  3 15:02:03 CT101 snoopy[264]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/rm]: rm -f lib/x86_64-linux-gnu/libnss_files.so.2
+May  3 15:02:03 CT101 snoopy[265]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/rm]: rm -f lib/x86_64-linux-gnu/libnss_hesiod-2.23.so
+May  3 15:02:03 CT101 snoopy[266]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/rm]: rm -f lib/x86_64-linux-gnu/libnss_hesiod.so.2
+May  3 15:02:03 CT101 snoopy[267]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/rm]: rm -f lib/x86_64-linux-gnu/libnss_nis-2.23.so
+May  3 15:02:03 CT101 snoopy[268]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/rm]: rm -f lib/x86_64-linux-gnu/libnss_nis.so.2
+May  3 15:02:03 CT101 snoopy[269]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/rm]: rm -f lib/x86_64-linux-gnu/libnss_nisplus-2.23.so
+May  3 15:02:03 CT101 snoopy[270]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/rm]: rm -f lib/x86_64-linux-gnu/libnss_nisplus.so.2
+May  3 15:02:03 CT101 snoopy[271]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/rm]: rm -f lib/x86_64-linux-gnu/libresolv-2.23.so
+May  3 15:02:03 CT101 snoopy[272]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/rm]: rm -f lib/x86_64-linux-gnu/libresolv.so.2
+May  3 15:02:03 CT101 snoopy[274]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/tar]: tar xf -
+May  3 15:02:03 CT101 snoopy[273]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/tar]: tar cf - -C / lib/x86_64-linux-gnu/libgcc_s.so.1 lib/x86_64-linux-gnu/libnss_compat-2.23.so lib/x86_64-linux-gnu/libnss_compat.so.2 lib/x86_64-linux-gnu/libnss_dns-2.23.so lib/x86_64-linux-gnu/libnss_dns.so.2 lib/x86_64-linux-gnu/libnss_files-2.23.so lib/x86_64-linux-gnu/libnss_files.so.2 lib/x86_64-linux-gnu/libnss_hesiod-2.23.so lib/x86_64-linux-gnu/libnss_hesiod.so.2 lib/x86_64-linux-gnu/libnss_nis-2.23.so lib/x86_64-linux-gnu/libnss_nis.so.2 lib/x86_64-linux-gnu/libnss_nisplus-2.23.so lib/x86_64-linux-gnu/libnss_nisplus.so.2 lib/x86_64-linux-gnu/libresolv-2.23.so lib/x86_64-linux-gnu/libresolv.so.2
+May  3 15:02:03 CT101 snoopy[275]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/sbin/start-stop-daemon]: start-stop-daemon --start --exec /usr/sbin/postmulti -- -i - -x /usr/sbin/postfix quiet-quick-start
+May  3 15:02:03 CT101 snoopy[275]: [uid:0 sid:192 tty:(none) cwd:/ filename:/usr/sbin/postmulti]: /usr/sbin/postmulti -i - -x /usr/sbin/postfix quiet-quick-start
+May  3 15:02:03 CT101 snoopy[277]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -dh config_directory
+May  3 15:02:03 CT101 snoopy[280]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/sed]: sed s/,/ /
+May  3 15:02:03 CT101 snoopy[279]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h multi_instance_directories
+May  3 15:02:03 CT101 snoopy[281]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/lib/postfix/sbin/master]: /usr/lib/postfix/sbin/master -t
+May  3 15:02:03 CT101 snoopy[282]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/lib/postfix/sbin/postfix-script]: /usr/lib/postfix/sbin/postfix-script quick-check
+May  3 15:02:03 CT101 snoopy[283]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -dh config_directory
+May  3 15:02:03 CT101 snoopy[286]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/sed]: sed s/,/ /
+May  3 15:02:03 CT101 snoopy[285]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h multi_instance_directories
+May  3 15:02:03 CT101 snoopy[288]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/sh]: /bin/sh /usr/lib/postfix/sbin/post-install create-missing
+May  3 15:02:03 CT101 snoopy[289]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -d mail_version
+May  3 15:02:03 CT101 snoopy[290]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -d -h config_directory
+May  3 15:02:03 CT101 snoopy[293]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/sed]: sed s/,/ /
+May  3 15:02:03 CT101 snoopy[292]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h multi_instance_directories
+May  3 15:02:03 CT101 snoopy[294]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/uname]: uname -s
+May  3 15:02:03 CT101 snoopy[295]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/bin/grep]: grep setgid_group /etc/postfix/main.cf
+May  3 15:02:03 CT101 snoopy[297]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -dhx mail_version
+May  3 15:02:03 CT101 snoopy[298]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h command_directory
+May  3 15:02:03 CT101 snoopy[299]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h daemon_directory
+May  3 15:02:03 CT101 snoopy[300]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h data_directory
+May  3 15:02:03 CT101 snoopy[301]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h html_directory
+May  3 15:02:03 CT101 snoopy[302]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h mail_owner
+May  3 15:02:03 CT101 snoopy[303]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h mailq_path
+May  3 15:02:03 CT101 snoopy[304]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h manpage_directory
+May  3 15:02:03 CT101 snoopy[305]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h newaliases_path
+May  3 15:02:03 CT101 snoopy[306]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h queue_directory
+May  3 15:02:03 CT101 snoopy[307]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h readme_directory
+May  3 15:02:03 CT101 snoopy[308]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h sample_directory
+May  3 15:02:03 CT101 snoopy[309]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h sendmail_path
+May  3 15:02:03 CT101 snoopy[310]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h setgid_group
+May  3 15:02:03 CT101 snoopy[311]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h shlib_directory
+May  3 15:02:04 CT101 snoopy[312]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h meta_directory
+May  3 15:02:04 CT101 snoopy[315]: [uid:0 sid:315 tty:(none) cwd:/ filename:/lib/systemd/systemd-update-utmp]: /lib/systemd/systemd-update-utmp runlevel
+May  3 15:02:04 CT101 snoopy[198]: [uid:0 sid:198 tty:(none) cwd:/ filename:/sbin/agetty]: /sbin/agetty --noclear --keep-baud console 115200,38400,9600 vt220
+May  3 15:02:04 CT101 snoopy[200]: [uid:0 sid:200 tty:(none) cwd:/ filename:/sbin/agetty]: /sbin/agetty --noclear --keep-baud pts/0 115200,38400,9600 vt220
+May  3 15:02:04 CT101 snoopy[199]: [uid:0 sid:199 tty:(none) cwd:/ filename:/sbin/agetty]: /sbin/agetty --noclear --keep-baud pts/1 115200,38400,9600 vt220
+May  3 15:02:04 CT101 snoopy[314]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/lib/postfix/sbin/master]: /usr/lib/postfix/sbin/master
+May  3 15:07:23 CT101 snoopy[322]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R
+May  3 15:07:24 CT101 sshd[322]: Invalid user 111111 from 195.3.147.48
+May  3 15:07:24 CT101 sshd[322]: input_userauth_request: invalid user 111111 [preauth]
+May  3 15:07:25 CT101 sshd[322]: pam_unix(sshd:auth): check pass; user unknown
+May  3 15:07:25 CT101 sshd[322]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=195.3.147.48
+May  3 15:07:27 CT101 sshd[322]: Failed password for invalid user 111111 from 195.3.147.48 port 6304 ssh2
+May  3 15:07:27 CT101 sshd[322]: Connection reset by 195.3.147.48 port 6304 [preauth]
+May  3 15:17:31 CT101 snoopy[324]: [uid:0 sid:324 tty:(none) cwd:/ filename:/bin/systemd-tmpfiles]: /bin/systemd-tmpfiles --clean
+May  3 15:24:01 CT101 CRON[325]: pam_unix(cron:session): session opened for user root by (uid=0)
+May  3 15:24:01 CT101 snoopy[327]: [uid:0 sid:326 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --report /etc/cron.hourly
+May  3 15:24:01 CT101 CRON[325]: pam_unix(cron:session): session closed for user root
+May  3 15:30:55 CT101 snoopy[328]: [uid:0 sid:328 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R
+May  3 15:30:56 CT101 sshd[328]: fatal: Unable to negotiate with 125.212.180.172 port 9111: no matching key exchange method found. Their offer: diffie-hellman-group1-sha1 [preauth]
+May  3 15:36:37 CT101 snoopy[330]: [uid:0 sid:330 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R
+May  3 15:36:38 CT101 sshd[330]: Accepted password for root from 142.93.53.26 port 53476 ssh2
+May  3 15:36:38 CT101 sshd[330]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May  3 15:36:38 CT101 systemd-logind[74]: New session 115 of user root.
+May  3 15:36:38 CT101 systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+May  3 15:36:38 CT101 snoopy[332]: [uid:0 sid:332 tty:(none) cwd:/ filename:/lib/systemd/systemd]: /lib/systemd/systemd --user
+May  3 15:36:38 CT101 snoopy[335]: [uid:0 sid:332 tty:(none) cwd:/ filename:/usr/lib/systemd/user-generators/systemd-dbus1-generator]: /usr/lib/systemd/user-generators/systemd-dbus1-generator /run/user/0/systemd/generator /run/user/0/systemd/generator.early /run/user/0/systemd/generator.late
+May  3 15:36:38 CT101 snoopy[337]: [uid:0 sid:330 tty:(none) cwd:/ filename:/usr/bin/env]: /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d
+May  3 15:36:38 CT101 snoopy[338]: [uid:0 sid:330 tty:(none) cwd:/ filename:/etc/update-motd.d/00-header]: /etc/update-motd.d/00-header
+May  3 15:36:38 CT101 snoopy[339]: [uid:0 sid:330 tty:(none) cwd:/ filename:/bin/uname]: uname -o
+May  3 15:36:38 CT101 snoopy[340]: [uid:0 sid:330 tty:(none) cwd:/ filename:/bin/uname]: uname -r
+May  3 15:36:38 CT101 snoopy[341]: [uid:0 sid:330 tty:(none) cwd:/ filename:/bin/uname]: uname -m
+May  3 15:36:38 CT101 snoopy[342]: [uid:0 sid:330 tty:(none) cwd:/ filename:/etc/update-motd.d/10-help-text]: /etc/update-motd.d/10-help-text
+May  3 15:36:38 CT101 snoopy[344]: [uid:0 sid:330 tty:(none) cwd:/ filename:/bin/grep]: grep -qs -server
+May  3 15:36:38 CT101 snoopy[343]: [uid:0 sid:330 tty:(none) cwd:/ filename:/bin/uname]: uname -r
+May  3 15:36:38 CT101 snoopy[345]: [uid:0 sid:330 tty:(none) cwd:/ filename:/etc/update-motd.d/91-release-upgrade]: /etc/update-motd.d/91-release-upgrade
+May  3 15:36:38 CT101 snoopy[348]: [uid:0 sid:330 tty:(none) cwd:/ filename:/usr/bin/cut]: cut -d  -f4
+May  3 15:36:38 CT101 snoopy[347]: [uid:0 sid:330 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -sd
+May  3 15:36:38 CT101 snoopy[345]: [uid:0 sid:330 tty:(none) cwd:/ filename:/usr/lib/ubuntu-release-upgrader/release-upgrade-motd]: /usr/lib/ubuntu-release-upgrader/release-upgrade-motd
+May  3 15:36:38 CT101 snoopy[349]: [uid:0 sid:330 tty:(none) cwd:/ filename:/usr/lib/ubuntu-release-upgrader/check-new-release]: /usr/lib/ubuntu-release-upgrader/check-new-release -q
+May  3 15:36:39 CT101 snoopy[352]: [uid:0 sid:330 tty:(none) cwd:/ filename:/usr/local/sbin/lsb_release]: lsb_release -c -s
+May  3 15:36:39 CT101 snoopy[352]: [uid:0 sid:330 tty:(none) cwd:/ filename:/usr/local/bin/lsb_release]: lsb_release -c -s
+May  3 15:36:39 CT101 snoopy[352]: [uid:0 sid:330 tty:(none) cwd:/ filename:/usr/sbin/lsb_release]: lsb_release -c -s
+May  3 15:36:39 CT101 snoopy[352]: [uid:0 sid:330 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -c -s
+May  3 15:36:39 CT101 snoopy[355]: [uid:0 sid:0 tty:(none) cwd:/ filename:/usr/bin/basename]: basename /usr/sbin/service
+May  3 15:36:39 CT101 snoopy[356]: [uid:0 sid:0 tty:(none) cwd:/ filename:/usr/bin/basename]: basename /usr/sbin/service
+May  3 15:36:39 CT101 snoopy[357]: [uid:0 sid:0 tty:(none) cwd:/ filename:/usr/bin/basename]: basename /usr/sbin/service
+May  3 15:36:39 CT101 snoopy[358]: [uid:0 sid:0 tty:(none) cwd:/ filename:/usr/bin/basename]: basename /usr/sbin/service
+May  3 15:36:39 CT101 snoopy[359]: [uid:0 sid:0 tty:(none) cwd:/ filename:/bin/which]: which initctl
+May  3 15:36:39 CT101 snoopy[360]: [uid:0 sid:0 tty:(none) cwd:/ filename:/bin/which]: which initctl
+May  3 15:36:39 CT101 snoopy[361]: [uid:0 sid:0 tty:(none) cwd:/ filename:/bin/systemctl]: systemctl is-system-running
+May  3 15:36:39 CT101 snoopy[362]: [uid:0 sid:0 tty:(none) cwd:/ filename:/bin/systemctl]: systemctl is-system-running
+May  3 15:36:39 CT101 snoopy[354]: [uid:0 sid:0 tty:(none) cwd:/ filename:/sbin/systemctl]: systemctl restart ssh.service
+May  3 15:36:39 CT101 snoopy[354]: [uid:0 sid:0 tty:(none) cwd:/ filename:/bin/systemctl]: systemctl restart ssh.service
+May  3 15:36:39 CT101 sshd[191]: Received signal 15; terminating.
+May  3 15:36:39 CT101 snoopy[363]: [uid:0 sid:363 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D
+May  3 15:36:39 CT101 snoopy[353]: [uid:0 sid:0 tty:(none) cwd:/ filename:/sbin/systemctl]: systemctl restart ssh.service
+May  3 15:36:39 CT101 snoopy[353]: [uid:0 sid:0 tty:(none) cwd:/ filename:/bin/systemctl]: systemctl restart ssh.service
+May  3 15:36:39 CT101 snoopy[364]: [uid:0 sid:364 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D
+May  3 15:36:39 CT101 snoopy[365]: [uid:0 sid:330 tty:(none) cwd:/ filename:/usr/local/sbin/lsb_release]: lsb_release -c -s
+May  3 15:36:39 CT101 snoopy[365]: [uid:0 sid:330 tty:(none) cwd:/ filename:/usr/local/bin/lsb_release]: lsb_release -c -s
+May  3 15:36:39 CT101 snoopy[365]: [uid:0 sid:330 tty:(none) cwd:/ filename:/usr/sbin/lsb_release]: lsb_release -c -s
+May  3 15:36:39 CT101 snoopy[365]: [uid:0 sid:330 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -c -s
+May  3 15:36:39 CT101 sshd[364]: Server listening on 0.0.0.0 port 22.
+May  3 15:36:39 CT101 sshd[364]: Server listening on :: port 22.
+May  3 15:36:39 CT101 snoopy[366]: [uid:0 sid:330 tty:(none) cwd:/ filename:/usr/local/sbin/lsb_release]: lsb_release -c -s
+May  3 15:36:39 CT101 snoopy[366]: [uid:0 sid:330 tty:(none) cwd:/ filename:/usr/local/bin/lsb_release]: lsb_release -c -s
+May  3 15:36:39 CT101 snoopy[366]: [uid:0 sid:330 tty:(none) cwd:/ filename:/usr/sbin/lsb_release]: lsb_release -c -s
+May  3 15:36:39 CT101 snoopy[366]: [uid:0 sid:330 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -c -s
+May  3 15:36:39 CT101 snoopy[367]: [uid:0 sid:330 tty:(none) cwd:/ filename:/usr/local/sbin/lsb_release]: lsb_release -r -s
+May  3 15:36:39 CT101 snoopy[367]: [uid:0 sid:330 tty:(none) cwd:/ filename:/usr/local/bin/lsb_release]: lsb_release -r -s
+May  3 15:36:39 CT101 snoopy[367]: [uid:0 sid:330 tty:(none) cwd:/ filename:/usr/sbin/lsb_release]: lsb_release -r -s
+May  3 15:36:39 CT101 snoopy[367]: [uid:0 sid:330 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -r -s
+May  3 15:37:13 CT101 sshd[330]: pam_unix(sshd:session): session closed for user root
+May  3 15:37:13 CT101 systemd-logind[74]: Removed session 115.
+May  3 15:37:13 CT101 snoopy[369]: [uid:0 sid:369 tty:(none) cwd:/root filename:/bin/kill]: /bin/kill -s 58 332
+May  3 15:38:51 CT101 snoopy[370]: [uid:0 sid:370 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R
+May  3 15:38:53 CT101 sshd[370]: User root from 51.15.183.131 not allowed because not listed in AllowUsers
+May  3 15:38:53 CT101 sshd[370]: input_userauth_request: invalid user root [preauth]
+May  3 15:38:53 CT101 sshd[370]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=51.15.183.131  user=root
+May  3 15:38:55 CT101 sshd[370]: Failed password for invalid user root from 51.15.183.131 port 55131 ssh2
+May  3 15:38:56 CT101 sshd[370]: Connection reset by 51.15.183.131 port 55131 [preauth]
+May  3 15:43:21 CT101 snoopy[372]: [uid:0 sid:372 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R
+May  3 15:43:23 CT101 sshd[372]: User root from 117.0.121.219 not allowed because not listed in AllowUsers
+May  3 15:43:23 CT101 sshd[372]: input_userauth_request: invalid user root [preauth]
+May  3 15:43:24 CT101 sshd[372]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=117.0.121.219  user=root
+May  3 15:43:25 CT101 sshd[372]: Failed password for invalid user root from 117.0.121.219 port 51451 ssh2
+May  3 15:43:26 CT101 sshd[372]: Connection reset by 117.0.121.219 port 51451 [preauth]

@@ -1,0 +1,82 @@
+May  3 05:26:14 CT101 snoopy[308]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h sample_directory
+May  3 05:26:14 CT101 snoopy[309]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h sendmail_path
+May  3 05:26:14 CT101 snoopy[310]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h setgid_group
+May  3 05:26:14 CT101 snoopy[311]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h shlib_directory
+May  3 05:26:14 CT101 snoopy[312]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h meta_directory
+May  3 05:26:14 CT101 snoopy[315]: [uid:0 sid:315 tty:(none) cwd:/ filename:/lib/systemd/systemd-update-utmp]: /lib/systemd/systemd-update-utmp runlevel
+May  3 05:26:14 CT101 snoopy[314]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/lib/postfix/sbin/master]: /usr/lib/postfix/sbin/master
+May  3 05:26:14 CT101 snoopy[197]: [uid:0 sid:197 tty:(none) cwd:/ filename:/sbin/agetty]: /sbin/agetty --noclear --keep-baud pts/1 115200,38400,9600 vt220
+May  3 05:26:14 CT101 snoopy[199]: [uid:0 sid:199 tty:(none) cwd:/ filename:/sbin/agetty]: /sbin/agetty --noclear --keep-baud pts/0 115200,38400,9600 vt220
+May  3 05:26:14 CT101 snoopy[198]: [uid:0 sid:198 tty:(none) cwd:/ filename:/sbin/agetty]: /sbin/agetty --noclear --keep-baud console 115200,38400,9600 vt220
+May  3 05:31:12 CT101 snoopy[322]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R
+May  3 05:31:13 CT101 sshd[322]: Accepted password for root from 134.209.110.121 port 65123 ssh2
+May  3 05:31:13 CT101 sshd[322]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May  3 05:31:13 CT101 systemd-logind[93]: New session 21 of user root.
+May  3 05:31:13 CT101 systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+May  3 05:31:13 CT101 snoopy[324]: [uid:0 sid:324 tty:(none) cwd:/ filename:/lib/systemd/systemd]: /lib/systemd/systemd --user
+May  3 05:31:13 CT101 snoopy[327]: [uid:0 sid:324 tty:(none) cwd:/ filename:/usr/lib/systemd/user-generators/systemd-dbus1-generator]: /usr/lib/systemd/user-generators/systemd-dbus1-generator /run/user/0/systemd/generator /run/user/0/systemd/generator.early /run/user/0/systemd/generator.late
+May  3 05:31:13 CT101 snoopy[329]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/bin/env]: /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d
+May  3 05:31:13 CT101 snoopy[330]: [uid:0 sid:322 tty:(none) cwd:/ filename:/etc/update-motd.d/00-header]: /etc/update-motd.d/00-header
+May  3 05:31:13 CT101 snoopy[331]: [uid:0 sid:322 tty:(none) cwd:/ filename:/bin/uname]: uname -o
+May  3 05:31:13 CT101 snoopy[332]: [uid:0 sid:322 tty:(none) cwd:/ filename:/bin/uname]: uname -r
+May  3 05:31:13 CT101 snoopy[333]: [uid:0 sid:322 tty:(none) cwd:/ filename:/bin/uname]: uname -m
+May  3 05:31:13 CT101 snoopy[334]: [uid:0 sid:322 tty:(none) cwd:/ filename:/etc/update-motd.d/10-help-text]: /etc/update-motd.d/10-help-text
+May  3 05:31:13 CT101 snoopy[336]: [uid:0 sid:322 tty:(none) cwd:/ filename:/bin/grep]: grep -qs -server
+May  3 05:31:13 CT101 snoopy[335]: [uid:0 sid:322 tty:(none) cwd:/ filename:/bin/uname]: uname -r
+May  3 05:31:13 CT101 snoopy[337]: [uid:0 sid:322 tty:(none) cwd:/ filename:/etc/update-motd.d/91-release-upgrade]: /etc/update-motd.d/91-release-upgrade
+May  3 05:31:13 CT101 snoopy[340]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/bin/cut]: cut -d  -f4
+May  3 05:31:13 CT101 snoopy[339]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -sd
+May  3 05:31:14 CT101 snoopy[337]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/lib/ubuntu-release-upgrader/release-upgrade-motd]: /usr/lib/ubuntu-release-upgrader/release-upgrade-motd
+May  3 05:31:14 CT101 snoopy[341]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/lib/ubuntu-release-upgrader/check-new-release]: /usr/lib/ubuntu-release-upgrader/check-new-release -q
+May  3 05:31:14 CT101 snoopy[345]: [uid:0 sid:0 tty:(none) cwd:/ filename:/usr/bin/basename]: basename /usr/sbin/service
+May  3 05:31:14 CT101 snoopy[346]: [uid:0 sid:0 tty:(none) cwd:/ filename:/usr/bin/basename]: basename /usr/sbin/service
+May  3 05:31:14 CT101 snoopy[347]: [uid:0 sid:0 tty:(none) cwd:/ filename:/bin/which]: which initctl
+May  3 05:31:14 CT101 snoopy[348]: [uid:0 sid:0 tty:(none) cwd:/ filename:/bin/systemctl]: systemctl is-system-running
+May  3 05:31:14 CT101 snoopy[344]: [uid:0 sid:0 tty:(none) cwd:/ filename:/sbin/systemctl]: systemctl restart ssh.service
+May  3 05:31:14 CT101 snoopy[344]: [uid:0 sid:0 tty:(none) cwd:/ filename:/bin/systemctl]: systemctl restart ssh.service
+May  3 05:31:14 CT101 sshd[191]: Received signal 15; terminating.
+May  3 05:31:14 CT101 snoopy[349]: [uid:0 sid:349 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D
+May  3 05:31:14 CT101 sshd[349]: Server listening on 0.0.0.0 port 22.
+May  3 05:31:14 CT101 sshd[349]: Server listening on :: port 22.
+May  3 05:31:14 CT101 snoopy[350]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/local/sbin/lsb_release]: lsb_release -c -s
+May  3 05:31:14 CT101 snoopy[350]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/local/bin/lsb_release]: lsb_release -c -s
+May  3 05:31:14 CT101 snoopy[350]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/sbin/lsb_release]: lsb_release -c -s
+May  3 05:31:14 CT101 snoopy[350]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -c -s
+May  3 05:31:15 CT101 snoopy[351]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/local/sbin/lsb_release]: lsb_release -c -s
+May  3 05:31:15 CT101 snoopy[351]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/local/bin/lsb_release]: lsb_release -c -s
+May  3 05:31:15 CT101 snoopy[351]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/sbin/lsb_release]: lsb_release -c -s
+May  3 05:31:15 CT101 snoopy[351]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -c -s
+May  3 05:31:15 CT101 snoopy[352]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/local/sbin/lsb_release]: lsb_release -c -s
+May  3 05:31:15 CT101 snoopy[352]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/local/bin/lsb_release]: lsb_release -c -s
+May  3 05:31:15 CT101 snoopy[352]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/sbin/lsb_release]: lsb_release -c -s
+May  3 05:31:15 CT101 snoopy[352]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -c -s
+May  3 05:31:15 CT101 snoopy[353]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/local/sbin/lsb_release]: lsb_release -r -s
+May  3 05:31:15 CT101 snoopy[353]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/local/bin/lsb_release]: lsb_release -r -s
+May  3 05:31:15 CT101 snoopy[353]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/sbin/lsb_release]: lsb_release -r -s
+May  3 05:31:15 CT101 snoopy[353]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -r -s
+May  3 05:32:47 CT101 sshd[322]: pam_unix(sshd:session): session closed for user root
+May  3 05:32:47 CT101 systemd-logind[93]: Removed session 21.
+May  3 05:32:47 CT101 snoopy[355]: [uid:0 sid:355 tty:(none) cwd:/root filename:/bin/kill]: /bin/kill -s 58 324
+May  3 05:38:17 CT101 snoopy[356]: [uid:0 sid:356 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R
+May  3 05:38:31 CT101 sshd[356]: User root from 198.13.47.26 not allowed because not listed in AllowUsers
+May  3 05:38:31 CT101 sshd[356]: input_userauth_request: invalid user root [preauth]
+May  3 05:38:31 CT101 sshd[356]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=198.13.47.26  user=root
+May  3 05:38:33 CT101 sshd[356]: Failed password for invalid user root from 198.13.47.26 port 49688 ssh2
+May  3 05:38:33 CT101 sshd[356]: Received disconnect from 198.13.47.26 port 49688:11: User exit [preauth]
+May  3 05:38:33 CT101 sshd[356]: Disconnected from 198.13.47.26 port 49688 [preauth]
+May  3 05:39:37 CT101 snoopy[358]: [uid:0 sid:358 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R
+May  3 05:39:38 CT101 sshd[358]: User root from 207.148.94.29 not allowed because not listed in AllowUsers
+May  3 05:39:38 CT101 sshd[358]: input_userauth_request: invalid user root [preauth]
+May  3 05:39:38 CT101 sshd[358]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=207.148.94.29  user=root
+May  3 05:39:40 CT101 sshd[358]: Failed password for invalid user root from 207.148.94.29 port 58175 ssh2
+May  3 05:39:40 CT101 sshd[358]: Received disconnect from 207.148.94.29 port 58175:11: User exit [preauth]
+May  3 05:39:40 CT101 sshd[358]: Disconnected from 207.148.94.29 port 58175 [preauth]
+May  3 05:40:29 CT101 snoopy[360]: [uid:0 sid:360 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R
+May  3 05:40:47 CT101 sshd[360]: User root from 192.227.98.61 not allowed because not listed in AllowUsers
+May  3 05:40:47 CT101 sshd[360]: input_userauth_request: invalid user root [preauth]
+May  3 05:40:48 CT101 sshd[360]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.227.98.61  user=root
+May  3 05:40:49 CT101 sshd[360]: Failed password for invalid user root from 192.227.98.61 port 62177 ssh2
+May  3 05:40:50 CT101 sshd[360]: Connection reset by 192.227.98.61 port 62177 [preauth]
+May  3 05:41:04 CT101 snoopy[362]: [uid:0 sid:362 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R
+May  3 05:41:31 CT101 snoopy[364]: [uid:0 sid:364 tty:(none) cwd:/ filename:/bin/systemd-tmpfiles]: /bin/systemd-tmpfiles --clean
+May  3 05:41:34 CT101 sshd[362]: Connection reset by 192.227.98.61 port 64916 [preauth]

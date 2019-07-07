@@ -1,0 +1,78 @@
+CT 101 already running
+mounted CT 101 in '/var/lib/lxc/101/rootfs'
+FOUND SRCIP 10.105.113.77
+1
+0
+10.105.113.77
+STARTING DESTRUCTION
+  Logical volume "vm-101-disk-1" successfully removed
+  Using default stripesize 64.00 KiB.
+  Logical volume "vm-101-disk-1" created.
+mke2fs 1.43.4 (31-Jan-2017)
+Discarding device blocks:    4096/1048576               done                            
+Creating filesystem with 1048576 4k blocks and 262144 inodes
+Filesystem UUID: abac4282-e34c-43c3-962c-7c52a4a4012f
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736
+
+Allocating group tables:  0/32     done                            
+Writing inode tables:  0/32     done                            
+Creating journal (16384 blocks): done
+Multiple mount protection is enabled with update interval 5 seconds.
+Writing superblocks and filesystem accounting information:  0/32     done
+
+extracting archive '/var/lib/vz/template/cache/ubuntu-16.04-standard_16.04-1_amd64.tar.gz'
+Total bytes read: 563712000 (538MiB, 119MiB/s)
+Detected container architecture: amd64
+Creating SSH host key 'ssh_host_ecdsa_key' - this may take some time ...
+done: SHA256:sMZMi2CWBT5s5ubwQD9sYjVV41s9+JRj1XOroHQotF8 root@localhost
+Creating SSH host key 'ssh_host_dsa_key' - this may take some time ...
+done: SHA256:SB0wUu+C8fGtmJNelzC1dIH3AESB+owOQ+o35Zzgpso root@localhost
+Creating SSH host key 'ssh_host_rsa_key' - this may take some time ...
+done: SHA256:1Fjx86r3BO4q+bXAQJEp1BSr/TcshKV1OO0ZBwcl1Z4 root@localhost
+Creating SSH host key 'ssh_host_ed25519_key' - this may take some time ...
+done: SHA256:VBRKPKIFJ6P+9BnrE3MXLc/aeEGiKb2z6MbLBJHbgSo root@localhost
+trying to acquire lock...
+ OK
+mounted CT 101 in '/var/lib/lxc/101/rootfs'
+--2019-04-11 19:54:45--  https://github.com/a2o/snoopy/raw/install/doc/install/bin/snoopy-install.sh
+Resolving github.com (github.com)... 192.30.253.113, 192.30.253.112
+Connecting to github.com (github.com)|192.30.253.113|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://raw.githubusercontent.com/a2o/snoopy/install/doc/install/bin/snoopy-install.sh [following]
+--2019-04-11 19:54:45--  https://raw.githubusercontent.com/a2o/snoopy/install/doc/install/bin/snoopy-install.sh
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.248.133
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.248.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 13204 (13K) [text/plain]
+Saving to: 'snoopy-install.sh'
+
+     0K .......... ..                                         100%  220K=0.06s
+
+2019-04-11 19:54:47 (220 KB/s) - 'snoopy-install.sh' saved [13204/13204]
+
+lxc-attach: 101: attach.c: lxc_attach_run_command: 1376 Text file busy - Failed to exec "./snoopy-install.sh".
+CT 101 already running
+mounted CT 101 in '/var/lib/lxc/101/rootfs'
+CT 101 already running
+umount: /var/lib/lxc/101/rootfs: target is busy
+        (In some cases useful info about processes that
+         use the device is found by lsof(8) or fuser(1).)
+command 'umount -d /var/lib/lxc/101/rootfs/' failed: exit code 32
+CT is locked (mounted)
+2019-04-21 23:40:24.190 - [Info] MITM Version: 1.25
+internal/modules/cjs/loader.js:584
+    throw err;
+    ^
+
+Error: Cannot find module '../config/mitm.js'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (/root/MITM/mitm/index.js:136:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)

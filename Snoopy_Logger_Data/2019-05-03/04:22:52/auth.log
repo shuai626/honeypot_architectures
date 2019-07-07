@@ -1,0 +1,157 @@
+May  3 08:22:51 CT101 snoopy[308]: [uid:0 sid:193 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h sample_directory
+May  3 08:22:51 CT101 snoopy[309]: [uid:0 sid:193 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h sendmail_path
+May  3 08:22:51 CT101 snoopy[310]: [uid:0 sid:193 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h setgid_group
+May  3 08:22:52 CT101 snoopy[311]: [uid:0 sid:193 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h shlib_directory
+May  3 08:22:52 CT101 snoopy[312]: [uid:0 sid:193 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h meta_directory
+May  3 08:22:52 CT101 snoopy[315]: [uid:0 sid:315 tty:(none) cwd:/ filename:/lib/systemd/systemd-update-utmp]: /lib/systemd/systemd-update-utmp runlevel
+May  3 08:22:52 CT101 snoopy[198]: [uid:0 sid:198 tty:(none) cwd:/ filename:/sbin/agetty]: /sbin/agetty --noclear --keep-baud pts/0 115200,38400,9600 vt220
+May  3 08:22:52 CT101 snoopy[199]: [uid:0 sid:199 tty:(none) cwd:/ filename:/sbin/agetty]: /sbin/agetty --noclear --keep-baud console 115200,38400,9600 vt220
+May  3 08:22:52 CT101 snoopy[197]: [uid:0 sid:197 tty:(none) cwd:/ filename:/sbin/agetty]: /sbin/agetty --noclear --keep-baud pts/1 115200,38400,9600 vt220
+May  3 08:22:52 CT101 snoopy[314]: [uid:0 sid:193 tty:(none) cwd:/var/spool/postfix filename:/usr/lib/postfix/sbin/master]: /usr/lib/postfix/sbin/master
+May  3 08:24:14 CT101 snoopy[322]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R
+May  3 08:24:14 CT101 sshd[322]: Accepted password for root from 163.172.117.68 port 55034 ssh2
+May  3 08:24:14 CT101 sshd[322]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May  3 08:24:14 CT101 systemd-logind[63]: New session 54 of user root.
+May  3 08:24:14 CT101 systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+May  3 08:24:14 CT101 snoopy[324]: [uid:0 sid:324 tty:(none) cwd:/ filename:/lib/systemd/systemd]: /lib/systemd/systemd --user
+May  3 08:24:14 CT101 snoopy[327]: [uid:0 sid:324 tty:(none) cwd:/ filename:/usr/lib/systemd/user-generators/systemd-dbus1-generator]: /usr/lib/systemd/user-generators/systemd-dbus1-generator /run/user/0/systemd/generator /run/user/0/systemd/generator.early /run/user/0/systemd/generator.late
+May  3 08:24:14 CT101 snoopy[329]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/bin/env]: /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d
+May  3 08:24:14 CT101 snoopy[330]: [uid:0 sid:322 tty:(none) cwd:/ filename:/etc/update-motd.d/00-header]: /etc/update-motd.d/00-header
+May  3 08:24:14 CT101 snoopy[331]: [uid:0 sid:322 tty:(none) cwd:/ filename:/bin/uname]: uname -o
+May  3 08:24:14 CT101 snoopy[332]: [uid:0 sid:322 tty:(none) cwd:/ filename:/bin/uname]: uname -r
+May  3 08:24:14 CT101 snoopy[333]: [uid:0 sid:322 tty:(none) cwd:/ filename:/bin/uname]: uname -m
+May  3 08:24:14 CT101 snoopy[334]: [uid:0 sid:322 tty:(none) cwd:/ filename:/etc/update-motd.d/10-help-text]: /etc/update-motd.d/10-help-text
+May  3 08:24:14 CT101 snoopy[336]: [uid:0 sid:322 tty:(none) cwd:/ filename:/bin/grep]: grep -qs -server
+May  3 08:24:14 CT101 snoopy[335]: [uid:0 sid:322 tty:(none) cwd:/ filename:/bin/uname]: uname -r
+May  3 08:24:14 CT101 snoopy[337]: [uid:0 sid:322 tty:(none) cwd:/ filename:/etc/update-motd.d/91-release-upgrade]: /etc/update-motd.d/91-release-upgrade
+May  3 08:24:14 CT101 snoopy[340]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/bin/cut]: cut -d  -f4
+May  3 08:24:14 CT101 snoopy[339]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -sd
+May  3 08:24:14 CT101 snoopy[337]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/lib/ubuntu-release-upgrader/release-upgrade-motd]: /usr/lib/ubuntu-release-upgrader/release-upgrade-motd
+May  3 08:24:14 CT101 sshd[322]: pam_unix(sshd:session): session closed for user root
+May  3 08:24:14 CT101 snoopy[341]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/lib/ubuntu-release-upgrader/check-new-release]: /usr/lib/ubuntu-release-upgrader/check-new-release -q
+May  3 08:24:15 CT101 snoopy[345]: [uid:0 sid:0 tty:(none) cwd:/ filename:/usr/bin/basename]: basename /usr/sbin/service
+May  3 08:24:15 CT101 snoopy[346]: [uid:0 sid:0 tty:(none) cwd:/ filename:/usr/bin/basename]: basename /usr/sbin/service
+May  3 08:24:15 CT101 snoopy[347]: [uid:0 sid:0 tty:(none) cwd:/ filename:/bin/which]: which initctl
+May  3 08:24:15 CT101 snoopy[348]: [uid:0 sid:0 tty:(none) cwd:/ filename:/bin/systemctl]: systemctl is-system-running
+May  3 08:24:15 CT101 snoopy[344]: [uid:0 sid:0 tty:(none) cwd:/ filename:/sbin/systemctl]: systemctl restart ssh.service
+May  3 08:24:15 CT101 snoopy[344]: [uid:0 sid:0 tty:(none) cwd:/ filename:/bin/systemctl]: systemctl restart ssh.service
+May  3 08:24:15 CT101 sshd[191]: Received signal 15; terminating.
+May  3 08:24:15 CT101 snoopy[349]: [uid:0 sid:349 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D
+May  3 08:24:15 CT101 sshd[349]: Server listening on 0.0.0.0 port 22.
+May  3 08:24:15 CT101 sshd[349]: Server listening on :: port 22.
+May  3 08:24:15 CT101 snoopy[350]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/local/sbin/lsb_release]: lsb_release -c -s
+May  3 08:24:15 CT101 snoopy[350]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/local/bin/lsb_release]: lsb_release -c -s
+May  3 08:24:15 CT101 snoopy[350]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/sbin/lsb_release]: lsb_release -c -s
+May  3 08:24:15 CT101 snoopy[350]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -c -s
+May  3 08:24:15 CT101 snoopy[351]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/local/sbin/lsb_release]: lsb_release -c -s
+May  3 08:24:15 CT101 snoopy[351]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/local/bin/lsb_release]: lsb_release -c -s
+May  3 08:24:15 CT101 snoopy[351]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/sbin/lsb_release]: lsb_release -c -s
+May  3 08:24:15 CT101 snoopy[351]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -c -s
+May  3 08:24:15 CT101 snoopy[352]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/local/sbin/lsb_release]: lsb_release -c -s
+May  3 08:24:15 CT101 snoopy[352]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/local/bin/lsb_release]: lsb_release -c -s
+May  3 08:24:15 CT101 snoopy[352]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/sbin/lsb_release]: lsb_release -c -s
+May  3 08:24:15 CT101 snoopy[352]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -c -s
+May  3 08:24:15 CT101 snoopy[353]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/local/sbin/lsb_release]: lsb_release -r -s
+May  3 08:24:15 CT101 snoopy[353]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/local/bin/lsb_release]: lsb_release -r -s
+May  3 08:24:15 CT101 snoopy[353]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/sbin/lsb_release]: lsb_release -r -s
+May  3 08:24:15 CT101 snoopy[353]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -r -s
+May  3 08:24:16 CT101 systemd-logind[63]: Removed session 54.
+May  3 08:24:16 CT101 snoopy[355]: [uid:0 sid:355 tty:(none) cwd:/root filename:/bin/kill]: /bin/kill -s 58 324
+May  3 08:24:29 CT101 snoopy[356]: [uid:0 sid:356 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R
+May  3 08:24:30 CT101 sshd[356]: fatal: Unable to negotiate with 178.128.58.48 port 63844: no matching key exchange method found. Their offer: diffie-hellman-group1-sha1 [preauth]
+May  3 08:24:31 CT101 snoopy[358]: [uid:0 sid:358 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R
+May  3 08:24:31 CT101 sshd[358]: fatal: Unable to negotiate with 178.128.58.48 port 64271: no matching key exchange method found. Their offer: diffie-hellman-group1-sha1 [preauth]
+May  3 08:29:51 CT101 snoopy[360]: [uid:0 sid:360 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R
+May  3 08:29:51 CT101 sshd[360]: Accepted password for root from 163.172.117.68 port 60531 ssh2
+May  3 08:29:51 CT101 sshd[360]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May  3 08:29:51 CT101 systemd-logind[63]: New session 55 of user root.
+May  3 08:29:51 CT101 systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+May  3 08:29:51 CT101 snoopy[362]: [uid:0 sid:362 tty:(none) cwd:/ filename:/lib/systemd/systemd]: /lib/systemd/systemd --user
+May  3 08:29:51 CT101 snoopy[365]: [uid:0 sid:362 tty:(none) cwd:/ filename:/usr/lib/systemd/user-generators/systemd-dbus1-generator]: /usr/lib/systemd/user-generators/systemd-dbus1-generator /run/user/0/systemd/generator /run/user/0/systemd/generator.early /run/user/0/systemd/generator.late
+May  3 08:29:51 CT101 snoopy[367]: [uid:0 sid:360 tty:(none) cwd:/ filename:/usr/bin/env]: /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d
+May  3 08:29:51 CT101 snoopy[368]: [uid:0 sid:360 tty:(none) cwd:/ filename:/etc/update-motd.d/00-header]: /etc/update-motd.d/00-header
+May  3 08:29:51 CT101 snoopy[369]: [uid:0 sid:360 tty:(none) cwd:/ filename:/bin/uname]: uname -o
+May  3 08:29:51 CT101 snoopy[370]: [uid:0 sid:360 tty:(none) cwd:/ filename:/bin/uname]: uname -r
+May  3 08:29:51 CT101 snoopy[371]: [uid:0 sid:360 tty:(none) cwd:/ filename:/bin/uname]: uname -m
+May  3 08:29:51 CT101 snoopy[372]: [uid:0 sid:360 tty:(none) cwd:/ filename:/etc/update-motd.d/10-help-text]: /etc/update-motd.d/10-help-text
+May  3 08:29:51 CT101 snoopy[374]: [uid:0 sid:360 tty:(none) cwd:/ filename:/bin/grep]: grep -qs -server
+May  3 08:29:51 CT101 snoopy[373]: [uid:0 sid:360 tty:(none) cwd:/ filename:/bin/uname]: uname -r
+May  3 08:29:51 CT101 snoopy[375]: [uid:0 sid:360 tty:(none) cwd:/ filename:/etc/update-motd.d/91-release-upgrade]: /etc/update-motd.d/91-release-upgrade
+May  3 08:29:51 CT101 snoopy[378]: [uid:0 sid:360 tty:(none) cwd:/ filename:/usr/bin/cut]: cut -d  -f4
+May  3 08:29:51 CT101 snoopy[377]: [uid:0 sid:360 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -sd
+May  3 08:29:52 CT101 snoopy[375]: [uid:0 sid:360 tty:(none) cwd:/ filename:/usr/lib/ubuntu-release-upgrader/release-upgrade-motd]: /usr/lib/ubuntu-release-upgrader/release-upgrade-motd
+May  3 08:29:52 CT101 snoopy[379]: [uid:0 sid:360 tty:(none) cwd:/ filename:/bin/date]: date +%s
+May  3 08:29:52 CT101 snoopy[380]: [uid:0 sid:360 tty:(none) cwd:/ filename:/usr/bin/stat]: stat -c %Y /var/lib/ubuntu-release-upgrader/release-upgrade-available
+May  3 08:29:52 CT101 snoopy[381]: [uid:0 sid:360 tty:(none) cwd:/ filename:/usr/bin/expr]: expr 1556871856 + 86400
+May  3 08:29:52 CT101 snoopy[382]: [uid:0 sid:360 tty:(none) cwd:/ filename:/bin/cat]: cat /var/lib/ubuntu-release-upgrader/release-upgrade-available
+May  3 08:29:52 CT101 sshd[360]: pam_unix(sshd:session): session closed for user root
+May  3 08:29:58 CT101 snoopy[383]: [uid:0 sid:383 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R
+May  3 08:29:59 CT101 sshd[383]: User root from 109.236.80.29 not allowed because not listed in AllowUsers
+May  3 08:29:59 CT101 sshd[383]: input_userauth_request: invalid user root [preauth]
+May  3 08:29:59 CT101 sshd[383]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=109.236.80.29  user=root
+May  3 08:30:01 CT101 sshd[383]: Failed password for invalid user root from 109.236.80.29 port 46939 ssh2
+May  3 08:30:01 CT101 sshd[383]: Connection closed by 109.236.80.29 port 46939 [preauth]
+May  3 08:30:09 CT101 snoopy[385]: [uid:0 sid:385 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R
+May  3 08:30:10 CT101 sshd[385]: Accepted password for root from 163.172.117.68 port 62590 ssh2
+May  3 08:30:10 CT101 sshd[385]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May  3 08:30:10 CT101 systemd-logind[63]: New session 56 of user root.
+May  3 08:30:10 CT101 snoopy[388]: [uid:0 sid:385 tty:(none) cwd:/ filename:/usr/bin/env]: /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d
+May  3 08:30:10 CT101 snoopy[389]: [uid:0 sid:385 tty:(none) cwd:/ filename:/etc/update-motd.d/00-header]: /etc/update-motd.d/00-header
+May  3 08:30:10 CT101 snoopy[390]: [uid:0 sid:385 tty:(none) cwd:/ filename:/bin/uname]: uname -o
+May  3 08:30:10 CT101 snoopy[391]: [uid:0 sid:385 tty:(none) cwd:/ filename:/bin/uname]: uname -r
+May  3 08:30:10 CT101 snoopy[392]: [uid:0 sid:385 tty:(none) cwd:/ filename:/bin/uname]: uname -m
+May  3 08:30:10 CT101 snoopy[393]: [uid:0 sid:385 tty:(none) cwd:/ filename:/etc/update-motd.d/10-help-text]: /etc/update-motd.d/10-help-text
+May  3 08:30:10 CT101 snoopy[395]: [uid:0 sid:385 tty:(none) cwd:/ filename:/bin/grep]: grep -qs -server
+May  3 08:30:10 CT101 snoopy[394]: [uid:0 sid:385 tty:(none) cwd:/ filename:/bin/uname]: uname -r
+May  3 08:30:10 CT101 snoopy[396]: [uid:0 sid:385 tty:(none) cwd:/ filename:/etc/update-motd.d/91-release-upgrade]: /etc/update-motd.d/91-release-upgrade
+May  3 08:30:10 CT101 snoopy[399]: [uid:0 sid:385 tty:(none) cwd:/ filename:/usr/bin/cut]: cut -d  -f4
+May  3 08:30:10 CT101 snoopy[398]: [uid:0 sid:385 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -sd
+May  3 08:30:10 CT101 snoopy[396]: [uid:0 sid:385 tty:(none) cwd:/ filename:/usr/lib/ubuntu-release-upgrader/release-upgrade-motd]: /usr/lib/ubuntu-release-upgrader/release-upgrade-motd
+May  3 08:30:10 CT101 snoopy[400]: [uid:0 sid:385 tty:(none) cwd:/ filename:/bin/date]: date +%s
+May  3 08:30:10 CT101 snoopy[401]: [uid:0 sid:385 tty:(none) cwd:/ filename:/usr/bin/stat]: stat -c %Y /var/lib/ubuntu-release-upgrader/release-upgrade-available
+May  3 08:30:10 CT101 snoopy[402]: [uid:0 sid:385 tty:(none) cwd:/ filename:/usr/bin/expr]: expr 1556871856 + 86400
+May  3 08:30:10 CT101 snoopy[403]: [uid:0 sid:385 tty:(none) cwd:/ filename:/bin/cat]: cat /var/lib/ubuntu-release-upgrader/release-upgrade-available
+May  3 08:30:10 CT101 sshd[385]: pam_unix(sshd:session): session closed for user root
+May  3 08:30:37 CT101 snoopy[404]: [uid:0 sid:404 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R
+May  3 08:30:38 CT101 sshd[404]: Accepted password for root from 163.172.117.68 port 49336 ssh2
+May  3 08:30:38 CT101 sshd[404]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May  3 08:30:38 CT101 systemd-logind[63]: New session 57 of user root.
+May  3 08:30:38 CT101 snoopy[407]: [uid:0 sid:404 tty:(none) cwd:/ filename:/usr/bin/env]: /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d
+May  3 08:30:38 CT101 snoopy[408]: [uid:0 sid:404 tty:(none) cwd:/ filename:/etc/update-motd.d/00-header]: /etc/update-motd.d/00-header
+May  3 08:30:38 CT101 snoopy[409]: [uid:0 sid:404 tty:(none) cwd:/ filename:/bin/uname]: uname -o
+May  3 08:30:38 CT101 snoopy[410]: [uid:0 sid:404 tty:(none) cwd:/ filename:/bin/uname]: uname -r
+May  3 08:30:38 CT101 snoopy[411]: [uid:0 sid:404 tty:(none) cwd:/ filename:/bin/uname]: uname -m
+May  3 08:30:38 CT101 snoopy[412]: [uid:0 sid:404 tty:(none) cwd:/ filename:/etc/update-motd.d/10-help-text]: /etc/update-motd.d/10-help-text
+May  3 08:30:38 CT101 snoopy[414]: [uid:0 sid:404 tty:(none) cwd:/ filename:/bin/grep]: grep -qs -server
+May  3 08:30:38 CT101 snoopy[413]: [uid:0 sid:404 tty:(none) cwd:/ filename:/bin/uname]: uname -r
+May  3 08:30:38 CT101 snoopy[415]: [uid:0 sid:404 tty:(none) cwd:/ filename:/etc/update-motd.d/91-release-upgrade]: /etc/update-motd.d/91-release-upgrade
+May  3 08:30:38 CT101 snoopy[418]: [uid:0 sid:404 tty:(none) cwd:/ filename:/usr/bin/cut]: cut -d  -f4
+May  3 08:30:38 CT101 snoopy[417]: [uid:0 sid:404 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -sd
+May  3 08:30:38 CT101 snoopy[415]: [uid:0 sid:404 tty:(none) cwd:/ filename:/usr/lib/ubuntu-release-upgrader/release-upgrade-motd]: /usr/lib/ubuntu-release-upgrader/release-upgrade-motd
+May  3 08:30:38 CT101 snoopy[419]: [uid:0 sid:404 tty:(none) cwd:/ filename:/bin/date]: date +%s
+May  3 08:30:38 CT101 snoopy[420]: [uid:0 sid:404 tty:(none) cwd:/ filename:/usr/bin/stat]: stat -c %Y /var/lib/ubuntu-release-upgrader/release-upgrade-available
+May  3 08:30:38 CT101 snoopy[421]: [uid:0 sid:404 tty:(none) cwd:/ filename:/usr/bin/expr]: expr 1556871856 + 86400
+May  3 08:30:38 CT101 snoopy[422]: [uid:0 sid:404 tty:(none) cwd:/ filename:/bin/cat]: cat /var/lib/ubuntu-release-upgrader/release-upgrade-available
+May  3 08:30:38 CT101 sshd[404]: pam_unix(sshd:session): session closed for user root
+May  3 08:32:56 CT101 snoopy[423]: [uid:0 sid:423 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R
+May  3 08:32:57 CT101 sshd[423]: Accepted password for root from 163.172.117.68 port 65164 ssh2
+May  3 08:32:57 CT101 sshd[423]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May  3 08:32:57 CT101 systemd-logind[63]: New session 58 of user root.
+May  3 08:32:57 CT101 snoopy[426]: [uid:0 sid:423 tty:(none) cwd:/ filename:/usr/bin/env]: /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d
+May  3 08:32:57 CT101 snoopy[427]: [uid:0 sid:423 tty:(none) cwd:/ filename:/etc/update-motd.d/00-header]: /etc/update-motd.d/00-header
+May  3 08:32:57 CT101 snoopy[428]: [uid:0 sid:423 tty:(none) cwd:/ filename:/bin/uname]: uname -o
+May  3 08:32:57 CT101 snoopy[429]: [uid:0 sid:423 tty:(none) cwd:/ filename:/bin/uname]: uname -r
+May  3 08:32:57 CT101 snoopy[430]: [uid:0 sid:423 tty:(none) cwd:/ filename:/bin/uname]: uname -m
+May  3 08:32:57 CT101 snoopy[431]: [uid:0 sid:423 tty:(none) cwd:/ filename:/etc/update-motd.d/10-help-text]: /etc/update-motd.d/10-help-text
+May  3 08:32:57 CT101 snoopy[433]: [uid:0 sid:423 tty:(none) cwd:/ filename:/bin/grep]: grep -qs -server
+May  3 08:32:57 CT101 snoopy[432]: [uid:0 sid:423 tty:(none) cwd:/ filename:/bin/uname]: uname -r
+May  3 08:32:57 CT101 snoopy[434]: [uid:0 sid:423 tty:(none) cwd:/ filename:/etc/update-motd.d/91-release-upgrade]: /etc/update-motd.d/91-release-upgrade
+May  3 08:32:57 CT101 snoopy[437]: [uid:0 sid:423 tty:(none) cwd:/ filename:/usr/bin/cut]: cut -d  -f4
+May  3 08:32:57 CT101 snoopy[436]: [uid:0 sid:423 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -sd
+May  3 08:32:57 CT101 snoopy[434]: [uid:0 sid:423 tty:(none) cwd:/ filename:/usr/lib/ubuntu-release-upgrader/release-upgrade-motd]: /usr/lib/ubuntu-release-upgrader/release-upgrade-motd
+May  3 08:32:57 CT101 snoopy[438]: [uid:0 sid:423 tty:(none) cwd:/ filename:/bin/date]: date +%s
+May  3 08:32:57 CT101 snoopy[439]: [uid:0 sid:423 tty:(none) cwd:/ filename:/usr/bin/stat]: stat -c %Y /var/lib/ubuntu-release-upgrader/release-upgrade-available
+May  3 08:32:57 CT101 snoopy[440]: [uid:0 sid:423 tty:(none) cwd:/ filename:/usr/bin/expr]: expr 1556871856 + 86400
+May  3 08:32:57 CT101 snoopy[441]: [uid:0 sid:423 tty:(none) cwd:/ filename:/bin/cat]: cat /var/lib/ubuntu-release-upgrader/release-upgrade-available
+May  3 08:32:57 CT101 sshd[423]: pam_unix(sshd:session): session closed for user root
+May  3 08:38:31 CT101 snoopy[442]: [uid:0 sid:442 tty:(none) cwd:/ filename:/bin/systemd-tmpfiles]: /bin/systemd-tmpfiles --clean

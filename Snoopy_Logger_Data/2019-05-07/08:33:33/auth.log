@@ -1,0 +1,39 @@
+May  7 12:33:20 CT101 sshd[183]: Server listening on 0.0.0.0 port 22.
+May  7 12:33:20 CT101 sshd[183]: Server listening on :: port 22.
+May  7 12:33:24 CT101 chpasswd[333]: pam_unix(chpasswd:chauthtok): password changed for root
+May  7 12:33:24 CT101 sshd[183]: Received signal 15; terminating.
+May  7 12:33:24 CT101 sshd[341]: Server listening on 0.0.0.0 port 22.
+May  7 12:33:24 CT101 sshd[341]: Server listening on :: port 22.
+May  7 12:33:25 CT101 chpasswd[342]: pam_unix(chpasswd:chauthtok): password changed for root
+May  7 12:33:30 CT101 systemd-logind[101]: New seat seat0.
+May  7 12:33:31 CT101 sshd[197]: Server listening on 0.0.0.0 port 22.
+May  7 12:33:31 CT101 sshd[197]: Server listening on :: port 22.
+May  7 12:33:36 CT101 systemd-logind[71]: New seat seat0.
+May  7 12:33:36 CT101 sshd[191]: Server listening on 0.0.0.0 port 22.
+May  7 12:33:36 CT101 sshd[191]: Server listening on :: port 22.
+May  7 12:34:05 CT101 sshd[300]: Connection reset by 207.148.71.138 port 61975 [preauth]
+May  7 12:36:32 CT101 sshd[324]: fatal: Unable to negotiate with 123.27.138.209 port 52387: no matching key exchange method found. Their offer: diffie-hellman-group1-sha1 [preauth]
+May  7 12:41:30 CT101 sshd[326]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=3.84.102.40  user=root
+May  7 12:41:32 CT101 sshd[326]: Failed password for root from 3.84.102.40 port 36058 ssh2
+May  7 12:41:32 CT101 sshd[328]: Accepted password for root from 3.84.102.40 port 36060 ssh2
+May  7 12:41:32 CT101 sshd[328]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May  7 12:41:32 CT101 systemd-logind[71]: New session 627 of user root.
+May  7 12:41:32 CT101 systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+May  7 12:41:34 CT101 sshd[191]: Received signal 15; terminating.
+May  7 12:41:34 CT101 sshd[359]: Server listening on 0.0.0.0 port 22.
+May  7 12:41:34 CT101 sshd[359]: Server listening on :: port 22.
+May  7 12:41:34 CT101 sshd[359]: Received signal 15; terminating.
+May  7 12:41:34 CT101 sshd[372]: Server listening on 0.0.0.0 port 22.
+May  7 12:41:34 CT101 sshd[372]: Server listening on :: port 22.
+May  7 12:41:36 CT101 sshd[328]: pam_unix(sshd:session): session closed for user root
+May  7 12:41:37 CT101 systemd-logind[71]: Removed session 627.
+May  7 12:44:16 CT101 sshd[376]: Invalid user 111111 from 195.3.147.48
+May  7 12:44:16 CT101 sshd[376]: input_userauth_request: invalid user 111111 [preauth]
+May  7 12:44:16 CT101 sshd[376]: pam_unix(sshd:auth): check pass; user unknown
+May  7 12:44:16 CT101 sshd[376]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=195.3.147.48
+May  7 12:44:18 CT101 sshd[376]: Failed password for invalid user 111111 from 195.3.147.48 port 35212 ssh2
+May  7 12:44:18 CT101 sshd[376]: Connection reset by 195.3.147.48 port 35212 [preauth]
+May  7 12:45:06 CT101 sshd[378]: User root from 206.189.80.14 not allowed because not listed in AllowUsers
+May  7 12:45:06 CT101 sshd[378]: input_userauth_request: invalid user root [preauth]
+May  7 12:45:06 CT101 sshd[378]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=206.189.80.14  user=root
+May  7 12:45:08 CT101 sshd[378]: Failed password for invalid user root from 206.189.80.14 port 51212 ssh2

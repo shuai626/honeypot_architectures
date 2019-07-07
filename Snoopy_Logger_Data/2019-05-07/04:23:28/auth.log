@@ -1,0 +1,52 @@
+May  7 08:23:18 CT101 chpasswd[336]: pam_unix(chpasswd:chauthtok): password changed for root
+May  7 08:23:19 CT101 sshd[185]: Received signal 15; terminating.
+May  7 08:23:19 CT101 sshd[343]: Server listening on 0.0.0.0 port 22.
+May  7 08:23:19 CT101 sshd[343]: Server listening on :: port 22.
+May  7 08:23:19 CT101 sshd[343]: Received signal 15; terminating.
+May  7 08:23:19 CT101 sshd[349]: Server listening on 0.0.0.0 port 22.
+May  7 08:23:19 CT101 sshd[349]: Server listening on :: port 22.
+May  7 08:23:24 CT101 systemd-logind[75]: New seat seat0.
+May  7 08:23:25 CT101 sshd[198]: Server listening on 0.0.0.0 port 22.
+May  7 08:23:25 CT101 sshd[198]: Server listening on :: port 22.
+May  7 08:23:30 CT101 systemd-logind[84]: New seat seat0.
+May  7 08:23:30 CT101 sshd[191]: Server listening on 0.0.0.0 port 22.
+May  7 08:23:30 CT101 sshd[191]: Server listening on :: port 22.
+May  7 08:25:05 CT101 sshd[322]: Did not receive identification string from 149.28.161.231
+May  7 08:26:41 CT101 sshd[323]: Connection reset by 45.76.77.76 port 62242 [preauth]
+May  7 08:28:11 CT101 sshd[325]: Accepted password for root from 116.110.218.186 port 52762 ssh2
+May  7 08:28:11 CT101 sshd[325]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May  7 08:28:11 CT101 systemd-logind[84]: New session 505 of user root.
+May  7 08:28:11 CT101 systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+May  7 08:28:13 CT101 sshd[191]: Received signal 15; terminating.
+May  7 08:28:13 CT101 sshd[367]: Server listening on 0.0.0.0 port 22.
+May  7 08:28:13 CT101 sshd[367]: Server listening on :: port 22.
+May  7 08:28:29 CT101 sshd[325]: pam_unix(sshd:session): session closed for user root
+May  7 08:28:31 CT101 sshd[369]: User root from 54.145.246.13 not allowed because not listed in AllowUsers
+May  7 08:28:31 CT101 sshd[369]: input_userauth_request: invalid user root [preauth]
+May  7 08:28:31 CT101 sshd[369]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=54.145.246.13  user=root
+May  7 08:28:33 CT101 sshd[369]: Failed password for invalid user root from 54.145.246.13 port 51462 ssh2
+May  7 08:28:33 CT101 systemd-logind[84]: Removed session 505.
+May  7 08:28:33 CT101 sshd[371]: User root from 54.145.246.13 not allowed because not listed in AllowUsers
+May  7 08:28:33 CT101 sshd[371]: input_userauth_request: invalid user root [preauth]
+May  7 08:28:33 CT101 sshd[371]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=54.145.246.13  user=root
+May  7 08:28:36 CT101 sshd[371]: Failed password for invalid user root from 54.145.246.13 port 51464 ssh2
+May  7 08:28:36 CT101 sshd[374]: User root from 54.145.246.13 not allowed because not listed in AllowUsers
+May  7 08:28:36 CT101 sshd[374]: input_userauth_request: invalid user root [preauth]
+May  7 08:28:36 CT101 sshd[374]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=54.145.246.13  user=root
+May  7 08:28:37 CT101 sshd[374]: Failed password for invalid user root from 54.145.246.13 port 51466 ssh2
+May  7 08:28:38 CT101 sshd[376]: User root from 54.145.246.13 not allowed because not listed in AllowUsers
+May  7 08:28:38 CT101 sshd[376]: input_userauth_request: invalid user root [preauth]
+May  7 08:28:38 CT101 sshd[376]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=54.145.246.13  user=root
+May  7 08:28:40 CT101 sshd[376]: Failed password for invalid user root from 54.145.246.13 port 51468 ssh2
+May  7 08:28:40 CT101 sshd[378]: User root from 54.145.246.13 not allowed because not listed in AllowUsers
+May  7 08:28:40 CT101 sshd[378]: input_userauth_request: invalid user root [preauth]
+May  7 08:28:40 CT101 sshd[378]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=54.145.246.13  user=root
+May  7 08:28:42 CT101 sshd[378]: Failed password for invalid user root from 54.145.246.13 port 51470 ssh2
+May  7 08:28:42 CT101 sshd[378]: Connection closed by 54.145.246.13 port 51470 [preauth]
+May  7 08:31:39 CT101 sshd[380]: Connection reset by 139.180.217.214 port 53061 [preauth]
+May  7 08:36:07 CT101 sshd[382]: Connection reset by 45.76.75.28 port 64802 [preauth]
+May  7 08:37:36 CT101 sshd[384]: User root from 134.209.110.121 not allowed because not listed in AllowUsers
+May  7 08:37:36 CT101 sshd[384]: input_userauth_request: invalid user root [preauth]
+May  7 08:37:36 CT101 sshd[384]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=134.209.110.121  user=root
+May  7 08:37:38 CT101 sshd[384]: Failed password for invalid user root from 134.209.110.121 port 54222 ssh2
+May  7 08:37:56 CT101 sshd[386]: fatal: Unable to negotiate with 125.212.181.229 port 59235: no matching key exchange method found. Their offer: diffie-hellman-group1-sha1 [preauth]

@@ -1,0 +1,22 @@
+May  2 18:58:00 CT101 snoopy[308]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h sample_directory
+May  2 18:58:00 CT101 snoopy[309]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h sendmail_path
+May  2 18:58:00 CT101 snoopy[310]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h setgid_group
+May  2 18:58:00 CT101 snoopy[311]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h shlib_directory
+May  2 18:58:00 CT101 snoopy[312]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h meta_directory
+May  2 18:58:00 CT101 snoopy[315]: [uid:0 sid:315 tty:(none) cwd:/ filename:/lib/systemd/systemd-update-utmp]: /lib/systemd/systemd-update-utmp runlevel
+May  2 18:58:00 CT101 snoopy[199]: [uid:0 sid:199 tty:(none) cwd:/ filename:/sbin/agetty]: /sbin/agetty --noclear --keep-baud pts/1 115200,38400,9600 vt220
+May  2 18:58:00 CT101 snoopy[197]: [uid:0 sid:197 tty:(none) cwd:/ filename:/sbin/agetty]: /sbin/agetty --noclear --keep-baud console 115200,38400,9600 vt220
+May  2 18:58:00 CT101 snoopy[198]: [uid:0 sid:198 tty:(none) cwd:/ filename:/sbin/agetty]: /sbin/agetty --noclear --keep-baud pts/0 115200,38400,9600 vt220
+May  2 18:58:00 CT101 snoopy[314]: [uid:0 sid:192 tty:(none) cwd:/var/spool/postfix filename:/usr/lib/postfix/sbin/master]: /usr/lib/postfix/sbin/master
+May  2 19:02:51 CT101 snoopy[322]: [uid:0 sid:322 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R
+May  2 19:03:21 CT101 sshd[322]: Connection reset by 35.237.52.65 port 59453 [preauth]
+May  2 19:08:42 CT101 snoopy[324]: [uid:0 sid:324 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R
+May  2 19:09:12 CT101 sshd[324]: Connection reset by 136.243.32.77 port 53542 [preauth]
+May  2 19:11:13 CT101 snoopy[326]: [uid:0 sid:326 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R
+May  2 19:11:41 CT101 sshd[326]: Connection reset by 176.9.145.84 port 62425 [preauth]
+May  2 19:13:34 CT101 snoopy[328]: [uid:0 sid:328 tty:(none) cwd:/ filename:/bin/systemd-tmpfiles]: /bin/systemd-tmpfiles --clean
+May  2 19:17:01 CT101 CRON[329]: pam_unix(cron:session): session opened for user root by (uid=0)
+May  2 19:17:01 CT101 snoopy[331]: [uid:0 sid:330 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --report /etc/cron.hourly
+May  2 19:17:01 CT101 CRON[329]: pam_unix(cron:session): session closed for user root
+May  2 19:28:19 CT101 snoopy[332]: [uid:0 sid:332 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R
+May  2 19:28:49 CT101 sshd[332]: Connection reset by 35.240.234.11 port 63790 [preauth]

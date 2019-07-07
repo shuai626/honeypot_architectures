@@ -1,0 +1,29 @@
+
+
+#!/bin/bash
+
+date=`date`
+ram=`free --mega| awk 'NR == 2 {print $7}'`
+disk=`df --total --block-size=MB | awk 'NR == 11 {print $4}'`
+load=`uptime | awk '{print $11}'`
+network_in=`ifconfig | awk 'NR == 14 {print $5}'`
+network_out=`ifconfig | awk 'NR == 16 {print$5}'`
+network_in=$(( network_in / 1024 ))
+network_out=$(( network_out / 1024 ))
+
+cont1_ram=$(pct exec 101 -- free --mega | awk 'NR == 2 {print $7}')
+cont2_ram=$(pct exec 102 -- free --mega | awk 'NR == 2 {print $7}')
+cont1_disk=$(pct exec 101 -- df --total --block-size=MB | awk 'NR == 8 {print $4}')
+cont2_disk=$(pct exec 102 -- df --total --block-size=MB | awk 'NR == 8 {print $4}')
+cont1_load=$(pct exec 101 -- uptime | awk '{print $11}')
+cont2_load=$(pct exec 102 -- uptime | awk '{print $11}')
+cont1_in=$(pct exec 101 -- ifconfig | awk -F":" 'NR == 8 {print $2}' | awk '{print $1}')
+cont2_in=$(pct exec 102 -- ifconfig | awk -F":" 'NR == 8 {print $2}' | awk '{print $1}')
+cont1_out=$(pct exec 101 -- ifconfig | awk -F":" 'NR == 8 {print $3}' | awk '{print $1}')
+cont2_out=$(pct exec 102 -- ifconfig | awk -F":" 'NR == 8 {print $3}' | awk '{print $1}')
+cont1_in=$(( cont1_in / 1024 ))
+cont2_in=$(( cont2_in / 1024 ))
+cont1_out=$(( cont1_out / 1024 ))
+cont2_out=$(( cont2_out / 1024 ))
+
+log -k /root/hacs-hp-1-health-logs-03ec913ef954.json -s https://docs.google.com/spreadsheets/d/1wlHS-uFZvdt3IcwDw4fzRxXAg97odq0K-HU34z1qpRQ/edit#gid=0 -d "$date","$ram","$disk","$load","$network_in","$network_out","$cont1_ram","$cont1_disk","$cont1_load","$cont1_in","$cont1_out","$cont2_ram","$cont2_disk","$cont2_load","$cont2_in","$cont2_out"

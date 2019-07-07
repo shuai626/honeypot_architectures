@@ -1,0 +1,18 @@
+#!/bin/bash
+
+sleep 605
+
+if [ -f ~/login_101 ]
+then
+
+	time=`cat ~/login_101`
+	secondsDiff=$(( `date '+%Y%m%d%H%M%S'` - $time ))
+	srcip=`cat ~/srcip_101`
+
+	if [ $secondsDiff -gt 600 ]
+	then
+		iptables --table filter --insert FORWARD 1 -s $srcip -d 172.20.0.2 --jump DROP
+		echo "STARTING DESTRUCTION"
+		nohup ~/clean_up_101 &
+	fi
+fi

@@ -1,0 +1,153 @@
+May 10 21:01:58 CT101 snoopy[308]: [uid:0 sid:191 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h sample_directory
+May 10 21:01:58 CT101 snoopy[309]: [uid:0 sid:191 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h sendmail_path
+May 10 21:01:58 CT101 snoopy[310]: [uid:0 sid:191 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h setgid_group
+May 10 21:01:58 CT101 snoopy[311]: [uid:0 sid:191 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h shlib_directory
+May 10 21:01:58 CT101 snoopy[312]: [uid:0 sid:191 tty:(none) cwd:/var/spool/postfix filename:/usr/sbin/postconf]: /usr/sbin/postconf -c /etc/postfix -h meta_directory
+May 10 21:01:58 CT101 snoopy[315]: [uid:0 sid:315 tty:(none) cwd:/ filename:/lib/systemd/systemd-update-utmp]: /lib/systemd/systemd-update-utmp runlevel
+May 10 21:01:58 CT101 snoopy[199]: [uid:0 sid:199 tty:(none) cwd:/ filename:/sbin/agetty]: /sbin/agetty --noclear --keep-baud pts/0 115200,38400,9600 vt220
+May 10 21:01:58 CT101 snoopy[200]: [uid:0 sid:200 tty:(none) cwd:/ filename:/sbin/agetty]: /sbin/agetty --noclear --keep-baud pts/1 115200,38400,9600 vt220
+May 10 21:01:58 CT101 snoopy[198]: [uid:0 sid:198 tty:(none) cwd:/ filename:/sbin/agetty]: /sbin/agetty --noclear --keep-baud console 115200,38400,9600 vt220
+May 10 21:01:58 CT101 snoopy[314]: [uid:0 sid:191 tty:(none) cwd:/var/spool/postfix filename:/usr/lib/postfix/sbin/master]: /usr/lib/postfix/sbin/master
+May 10 21:17:18 CT101 snoopy[322]: [uid:0 sid:322 tty:(none) cwd:/ filename:/bin/systemd-tmpfiles]: /bin/systemd-tmpfiles --clean
+May 10 21:40:01 CT101 CRON[323]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 10 21:40:01 CT101 snoopy[325]: [uid:0 sid:324 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --report /etc/cron.hourly
+May 10 21:40:01 CT101 CRON[323]: pam_unix(cron:session): session closed for user root
+May 10 22:40:01 CT101 CRON[326]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 10 22:40:01 CT101 snoopy[328]: [uid:0 sid:327 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --report /etc/cron.hourly
+May 10 22:40:01 CT101 CRON[326]: pam_unix(cron:session): session closed for user root
+May 10 23:40:01 CT101 CRON[330]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 10 23:40:01 CT101 snoopy[332]: [uid:0 sid:331 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --report /etc/cron.hourly
+May 10 23:40:01 CT101 CRON[330]: pam_unix(cron:session): session closed for user root
+May 11 00:40:01 CT101 CRON[334]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 11 00:40:01 CT101 snoopy[336]: [uid:0 sid:335 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --report /etc/cron.hourly
+May 11 00:40:01 CT101 CRON[334]: pam_unix(cron:session): session closed for user root
+May 11 01:40:01 CT101 CRON[337]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 11 01:40:01 CT101 snoopy[339]: [uid:0 sid:338 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --report /etc/cron.hourly
+May 11 01:40:01 CT101 CRON[337]: pam_unix(cron:session): session closed for user root
+May 11 02:40:01 CT101 CRON[341]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 11 02:40:02 CT101 snoopy[343]: [uid:0 sid:342 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --report /etc/cron.hourly
+May 11 02:40:02 CT101 CRON[341]: pam_unix(cron:session): session closed for user root
+May 11 03:40:01 CT101 CRON[344]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 11 03:40:01 CT101 snoopy[346]: [uid:0 sid:345 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --report /etc/cron.hourly
+May 11 03:40:01 CT101 CRON[344]: pam_unix(cron:session): session closed for user root
+May 11 04:40:01 CT101 CRON[348]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 11 04:40:01 CT101 snoopy[350]: [uid:0 sid:349 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --report /etc/cron.hourly
+May 11 04:40:01 CT101 CRON[348]: pam_unix(cron:session): session closed for user root
+May 11 05:40:01 CT101 CRON[352]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 11 05:40:01 CT101 snoopy[354]: [uid:0 sid:353 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --report /etc/cron.hourly
+May 11 05:40:01 CT101 CRON[352]: pam_unix(cron:session): session closed for user root
+May 11 06:04:01 CT101 CRON[355]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 11 06:04:01 CT101 snoopy[357]: [uid:0 sid:356 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --report /etc/cron.daily
+May 11 06:04:01 CT101 snoopy[358]: [uid:0 sid:356 tty:(none) cwd:/ filename:/etc/cron.daily/apt-compat]: /etc/cron.daily/apt-compat
+May 11 06:04:01 CT101 snoopy[359]: [uid:0 sid:356 tty:(none) cwd:/ filename:/etc/cron.daily/bsdmainutils]: /etc/cron.daily/bsdmainutils
+May 11 06:04:01 CT101 snoopy[360]: [uid:0 sid:356 tty:(none) cwd:/ filename:/etc/cron.daily/dpkg]: /etc/cron.daily/dpkg
+May 11 06:04:01 CT101 snoopy[361]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/usr/bin/cmp]: cmp -s dpkg.arch.0 /var/lib/dpkg/arch
+May 11 06:04:01 CT101 snoopy[362]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/cp]: cp -p /var/lib/dpkg/status dpkg.status
+May 11 06:04:01 CT101 snoopy[363]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/usr/bin/savelog]: savelog -c 7 dpkg.status
+May 11 06:04:01 CT101 snoopy[364]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/date]: date +%Y%m%d%H%M%S
+May 11 06:04:01 CT101 snoopy[365]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/usr/bin/basename]: basename /usr/bin/savelog
+May 11 06:04:01 CT101 snoopy[366]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/which]: which gzip
+May 11 06:04:01 CT101 snoopy[367]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/usr/bin/dirname]: dirname -- dpkg.status
+May 11 06:04:01 CT101 snoopy[368]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/usr/bin/basename]: basename -- dpkg.status
+May 11 06:04:01 CT101 snoopy[369]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/rm]: rm -f -- .//dpkg.status.6 .//dpkg.status.6.gz
+May 11 06:04:01 CT101 snoopy[370]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/mv]: mv -- dpkg.status .//dpkg.status.0
+May 11 06:04:01 CT101 snoopy[371]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/date]: date
+May 11 06:04:01 CT101 snoopy[372]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/cp]: cp -p /var/lib/dpkg/diversions dpkg.diversions
+May 11 06:04:01 CT101 snoopy[373]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/usr/bin/savelog]: savelog -c 7 dpkg.diversions
+May 11 06:04:01 CT101 snoopy[374]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/date]: date +%Y%m%d%H%M%S
+May 11 06:04:01 CT101 snoopy[375]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/usr/bin/basename]: basename /usr/bin/savelog
+May 11 06:04:01 CT101 snoopy[376]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/which]: which gzip
+May 11 06:04:01 CT101 snoopy[377]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/usr/bin/dirname]: dirname -- dpkg.diversions
+May 11 06:04:01 CT101 snoopy[378]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/usr/bin/basename]: basename -- dpkg.diversions
+May 11 06:04:01 CT101 snoopy[379]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/rm]: rm -f -- .//dpkg.diversions.6 .//dpkg.diversions.6.gz
+May 11 06:04:01 CT101 snoopy[380]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/mv]: mv -- dpkg.diversions .//dpkg.diversions.0
+May 11 06:04:01 CT101 snoopy[381]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/date]: date
+May 11 06:04:01 CT101 snoopy[382]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/cp]: cp -p /var/lib/dpkg/statoverride dpkg.statoverride
+May 11 06:04:01 CT101 snoopy[383]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/usr/bin/savelog]: savelog -c 7 dpkg.statoverride
+May 11 06:04:01 CT101 snoopy[384]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/date]: date +%Y%m%d%H%M%S
+May 11 06:04:01 CT101 snoopy[385]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/usr/bin/basename]: basename /usr/bin/savelog
+May 11 06:04:01 CT101 snoopy[386]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/which]: which gzip
+May 11 06:04:01 CT101 snoopy[387]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/usr/bin/dirname]: dirname -- dpkg.statoverride
+May 11 06:04:01 CT101 snoopy[388]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/usr/bin/basename]: basename -- dpkg.statoverride
+May 11 06:04:01 CT101 snoopy[389]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/rm]: rm -f -- .//dpkg.statoverride.6 .//dpkg.statoverride.6.gz
+May 11 06:04:01 CT101 snoopy[390]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/mv]: mv -- dpkg.statoverride .//dpkg.statoverride.0
+May 11 06:04:01 CT101 snoopy[391]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/date]: date
+May 11 06:04:01 CT101 snoopy[392]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/usr/bin/seq]: seq 1 6
+May 11 06:04:01 CT101 snoopy[393]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/tar]: tar -cf alternatives.tar -C /var/lib/dpkg alternatives
+May 11 06:04:01 CT101 snoopy[394]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/usr/bin/savelog]: savelog -c 7 alternatives.tar
+May 11 06:04:01 CT101 snoopy[395]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/date]: date +%Y%m%d%H%M%S
+May 11 06:04:01 CT101 snoopy[396]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/usr/bin/basename]: basename /usr/bin/savelog
+May 11 06:04:01 CT101 snoopy[397]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/which]: which gzip
+May 11 06:04:01 CT101 snoopy[398]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/usr/bin/dirname]: dirname -- alternatives.tar
+May 11 06:04:01 CT101 snoopy[399]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/usr/bin/basename]: basename -- alternatives.tar
+May 11 06:04:01 CT101 snoopy[400]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/rm]: rm -f -- .//alternatives.tar.6 .//alternatives.tar.6.gz
+May 11 06:04:01 CT101 snoopy[401]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/mv]: mv -- alternatives.tar .//alternatives.tar.0
+May 11 06:04:01 CT101 snoopy[402]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/date]: date
+May 11 06:04:01 CT101 snoopy[403]: [uid:0 sid:356 tty:(none) cwd:/ filename:/etc/cron.daily/logrotate]: /etc/cron.daily/logrotate
+May 11 06:04:01 CT101 snoopy[404]: [uid:0 sid:356 tty:(none) cwd:/var/lib/logrotate filename:/bin/touch]: touch status
+May 11 06:04:01 CT101 snoopy[405]: [uid:0 sid:356 tty:(none) cwd:/var/lib/logrotate filename:/usr/bin/head]: head -1 status
+May 11 06:04:01 CT101 snoopy[406]: [uid:0 sid:356 tty:(none) cwd:/var/lib/logrotate filename:/bin/sed]: sed s/"//g status
+May 11 06:04:01 CT101 snoopy[408]: [uid:0 sid:356 tty:(none) cwd:/var/lib/logrotate filename:/bin/mv]: mv status.clean status
+May 11 06:04:01 CT101 snoopy[409]: [uid:0 sid:356 tty:(none) cwd:/var/lib/logrotate filename:/usr/sbin/logrotate]: /usr/sbin/logrotate /etc/logrotate.conf
+May 11 06:04:01 CT101 snoopy[410]: [uid:0 sid:356 tty:(none) cwd:/ filename:/etc/cron.daily/man-db]: /etc/cron.daily/man-db
+May 11 06:04:01 CT101 snoopy[411]: [uid:0 sid:356 tty:(none) cwd:/ filename:/bin/egrep]: egrep -q (envID|VxID):.*[1-9] /proc/self/status
+May 11 06:04:01 CT101 snoopy[411]: [uid:0 sid:356 tty:(none) cwd:/ filename:/usr/local/sbin/grep]: grep -E -q (envID|VxID):.*[1-9] /proc/self/status
+May 11 06:04:01 CT101 snoopy[411]: [uid:0 sid:356 tty:(none) cwd:/ filename:/usr/local/bin/grep]: grep -E -q (envID|VxID):.*[1-9] /proc/self/status
+May 11 06:04:01 CT101 snoopy[411]: [uid:0 sid:356 tty:(none) cwd:/ filename:/sbin/grep]: grep -E -q (envID|VxID):.*[1-9] /proc/self/status
+May 11 06:04:01 CT101 snoopy[411]: [uid:0 sid:356 tty:(none) cwd:/ filename:/bin/grep]: grep -E -q (envID|VxID):.*[1-9] /proc/self/status
+May 11 06:04:01 CT101 snoopy[413]: [uid:0 sid:356 tty:(none) cwd:/ filename:/sbin/start-stop-daemon]: start-stop-daemon --start --pidfile /dev/null --startas /usr/bin/mandb --oknodo --chuid man --iosched idle -- --no-purge --quiet
+May 11 06:04:01 CT101 snoopy[413]: [uid:6 sid:356 tty:(none) cwd:/ filename:/usr/bin/mandb]: /usr/bin/mandb --no-purge --quiet
+May 11 06:04:02 CT101 snoopy[646]: [uid:0 sid:356 tty:(none) cwd:/ filename:/etc/cron.daily/mlocate]: /etc/cron.daily/mlocate
+May 11 06:04:02 CT101 snoopy[647]: [uid:0 sid:356 tty:(none) cwd:/ filename:/bin/which]: which on_ac_power
+May 11 06:04:02 CT101 snoopy[648]: [uid:0 sid:356 tty:(none) cwd:/ filename:/sbin/on_ac_power]: on_ac_power
+May 11 06:04:02 CT101 snoopy[649]: [uid:0 sid:356 tty:(none) cwd:/ filename:/sbin/acpi_available]: /sbin/acpi_available
+May 11 06:04:02 CT101 snoopy[650]: [uid:0 sid:356 tty:(none) cwd:/ filename:/usr/bin/ionice]: /usr/bin/ionice -c3 true
+May 11 06:04:02 CT101 snoopy[651]: [uid:0 sid:356 tty:(none) cwd:/ filename:/usr/bin/flock]: flock --nonblock /run/mlocate.daily.lock /usr/bin/ionice -c3 /usr/bin/updatedb.mlocate
+May 11 06:04:02 CT101 snoopy[653]: [uid:0 sid:356 tty:(none) cwd:/ filename:/etc/cron.daily/passwd]: /etc/cron.daily/passwd
+May 11 06:04:02 CT101 snoopy[654]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/usr/bin/cmp]: cmp -s passwd.bak /etc/passwd
+May 11 06:04:02 CT101 snoopy[655]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/cp]: cp -p /etc/passwd passwd.bak
+May 11 06:04:02 CT101 snoopy[656]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/chmod]: chmod 600 passwd.bak
+May 11 06:04:02 CT101 snoopy[657]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/usr/bin/cmp]: cmp -s group.bak /etc/group
+May 11 06:04:02 CT101 snoopy[658]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/cp]: cp -p /etc/group group.bak
+May 11 06:04:02 CT101 snoopy[659]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/chmod]: chmod 600 group.bak
+May 11 06:04:02 CT101 snoopy[660]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/usr/bin/cmp]: cmp -s shadow.bak /etc/shadow
+May 11 06:04:02 CT101 snoopy[661]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/cp]: cp -p /etc/shadow shadow.bak
+May 11 06:04:02 CT101 snoopy[662]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/chmod]: chmod 600 shadow.bak
+May 11 06:04:02 CT101 snoopy[663]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/usr/bin/cmp]: cmp -s gshadow.bak /etc/gshadow
+May 11 06:04:02 CT101 snoopy[664]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/cp]: cp -p /etc/gshadow gshadow.bak
+May 11 06:04:02 CT101 snoopy[665]: [uid:0 sid:356 tty:(none) cwd:/var/backups filename:/bin/chmod]: chmod 600 gshadow.bak
+May 11 06:04:02 CT101 snoopy[666]: [uid:0 sid:356 tty:(none) cwd:/ filename:/etc/cron.daily/popularity-contest]: /etc/cron.daily/popularity-contest
+May 11 06:04:02 CT101 CRON[355]: pam_unix(cron:session): session closed for user root
+May 11 06:40:01 CT101 CRON[667]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 11 06:40:02 CT101 snoopy[669]: [uid:0 sid:668 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --report /etc/cron.hourly
+May 11 06:40:02 CT101 CRON[667]: pam_unix(cron:session): session closed for user root
+May 11 07:36:01 CT101 CRON[671]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 11 07:36:01 CT101 snoopy[673]: [uid:0 sid:672 tty:(none) cwd:/root filename:/etc/cron.daily/popularity-contest]: /etc/cron.daily/popularity-contest --crond
+May 11 07:36:01 CT101 CRON[671]: pam_unix(cron:session): session closed for user root
+May 11 07:40:01 CT101 CRON[674]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 11 07:40:01 CT101 snoopy[676]: [uid:0 sid:675 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --report /etc/cron.hourly
+May 11 07:40:01 CT101 CRON[674]: pam_unix(cron:session): session closed for user root
+May 11 08:40:01 CT101 CRON[677]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 11 08:40:01 CT101 snoopy[679]: [uid:0 sid:678 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --report /etc/cron.hourly
+May 11 08:40:01 CT101 CRON[677]: pam_unix(cron:session): session closed for user root
+May 11 09:40:01 CT101 CRON[681]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 11 09:40:01 CT101 snoopy[683]: [uid:0 sid:682 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --report /etc/cron.hourly
+May 11 09:40:01 CT101 CRON[681]: pam_unix(cron:session): session closed for user root
+May 11 10:40:01 CT101 CRON[686]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 11 10:40:01 CT101 snoopy[688]: [uid:0 sid:687 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --report /etc/cron.hourly
+May 11 10:40:01 CT101 CRON[686]: pam_unix(cron:session): session closed for user root
+May 11 11:40:01 CT101 CRON[689]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 11 11:40:01 CT101 snoopy[691]: [uid:0 sid:690 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --report /etc/cron.hourly
+May 11 11:40:01 CT101 CRON[689]: pam_unix(cron:session): session closed for user root
+May 11 12:40:01 CT101 CRON[693]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 11 12:40:01 CT101 snoopy[695]: [uid:0 sid:694 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --report /etc/cron.hourly
+May 11 12:40:01 CT101 CRON[693]: pam_unix(cron:session): session closed for user root
+May 11 13:40:01 CT101 CRON[696]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 11 13:40:01 CT101 snoopy[698]: [uid:0 sid:697 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --report /etc/cron.hourly
+May 11 13:40:01 CT101 CRON[696]: pam_unix(cron:session): session closed for user root
+May 11 14:40:01 CT101 CRON[700]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 11 14:40:01 CT101 snoopy[702]: [uid:0 sid:701 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --report /etc/cron.hourly
+May 11 14:40:01 CT101 CRON[700]: pam_unix(cron:session): session closed for user root
+May 11 15:40:01 CT101 CRON[704]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 11 15:40:02 CT101 snoopy[706]: [uid:0 sid:705 tty:(none) cwd:/ filename:/bin/run-parts]: run-parts --report /etc/cron.hourly
+May 11 15:40:02 CT101 CRON[704]: pam_unix(cron:session): session closed for user root
