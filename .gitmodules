@@ -1,0 +1,9 @@
+[submodule "Honeypot_Architecture"]
+	path = Honeypot_Architecture
+	url = git://github.com/UMD-ACES/Honeypot_Architecture
+[submodule "MITM"]
+	path = MITM
+	url = git://github.com/UMD-ACES/MITM
+[submodule "Health_Logs"]
+	path = Health_Logs
+	url = git://github.com/UMD-ACES/Health_Logs
